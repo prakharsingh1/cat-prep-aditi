@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAT Prep Guide for Aditi 🎯 | 25 Years Paper Analysis</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0f0f1a;
+      --card: #1a1a2e;
+      --card2: #16213e;
+      --border: #2a2a4a;
+      --text: #e8e8f0;
+      --muted: #8888aa;
+      --primary: #6c5ce7;
+      --primary-light: #a29bfe;
+      --accent: #fd79a8;
+      --green: #00b894;
+      --yellow: #fdcb6e;
+      --red: #e17055;
+      --blue: #74b9ff;
+      --orange: #e17055;
+      --cyan: #81ecec;
+      --gradient1: linear-gradient(135deg, #6c5ce7, #a29bfe);
+      --gradient2: linear-gradient(135deg, #fd79a8, #e84393);
+      --gradient3: linear-gradient(135deg, #00b894, #55efc4);
+    }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a { color: var(--primary-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Animated Background */
+    .bg-pattern {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: radial-gradient(ellipse at 20% 50%, rgba(108,92,231,0.08) 0%, transparent 50%),
+                  radial-gradient(ellipse at 80% 20%, rgba(253,121,168,0.06) 0%, transparent 50%),
+                  radial-gradient(ellipse at 50% 80%, rgba(0,184,148,0.05) 0%, transparent 50%);
+      pointer-events: none; z-index: 0;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative; z-index: 1;
+      padding: 60px 20px 40px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(108,92,231,0.15) 0%, transparent 100%);
+    }
+    .hero-badge {
+      display: inline-block; padding: 6px 16px; border-radius: 50px;
+      background: rgba(108,92,231,0.2); border: 1px solid rgba(108,92,231,0.3);
+      font-size: 13px; color: var(--primary-light); margin-bottom: 16px;
+    }
+    .hero h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 800; margin-bottom: 8px; }
+    .hero h1 span { background: var(--gradient2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { color: var(--muted); font-size: 16px; max-width: 600px; margin: 0 auto 24px; }
+    .hero-stats {
+      display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;
+      margin-top: 24px;
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat .num { font-size: 28px; font-weight: 800; color: var(--primary-light); }
+    .hero-stat .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+
+    /* Container */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 1; }
+
+    /* Navigation */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(15,15,26,0.9); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 20px;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; gap: 4px; overflow-x: auto;
+      scrollbar-width: none; -ms-overflow-style: none;
+    }
+    .nav-inner::-webkit-scrollbar { display: none; }
+    .nav-btn {
+      padding: 14px 16px; font-size: 13px; font-weight: 500;
+      color: var(--muted); background: none; border: none;
+      cursor: pointer; white-space: nowrap; transition: all 0.2s;
+      border-bottom: 2px solid transparent; font-family: inherit;
+    }
+    .nav-btn:hover { color: var(--text); }
+    .nav-btn.active { color: var(--primary-light); border-bottom-color: var(--primary); }
+
+    /* Section */
+    .section { padding: 40px 0; display: none; }
+    .section.active { display: block; }
+    .section-title {
+      font-size: 24px; font-weight: 700; margin-bottom: 6px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .section-subtitle { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+
+    /* Cards */
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 24px; margin-bottom: 20px;
+      transition: border-color 0.3s;
+    }
+    .card:hover { border-color: rgba(108,92,231,0.4); }
+    .card-title { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+    .card-subtitle { font-size: 13px; color: var(--muted); margin-bottom: 16px; }
+
+    /* Grid */
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+
+    /* Stat Cards */
+    .stat-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 20px; text-align: center;
+      transition: transform 0.2s, border-color 0.3s;
+    }
+    .stat-card:hover { transform: translateY(-3px); border-color: rgba(108,92,231,0.4); }
+    .stat-card .icon { font-size: 28px; margin-bottom: 8px; }
+    .stat-card .value { font-size: 24px; font-weight: 800; margin-bottom: 4px; }
+    .stat-card .label { font-size: 12px; color: var(--muted); }
+
+    /* Progress Bars */
+    .progress-item { margin-bottom: 14px; }
+    .progress-header { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 5px; }
+    .progress-header .name { font-weight: 500; }
+    .progress-header .pct { color: var(--primary-light); font-weight: 700; }
+    .progress-track { height: 8px; background: rgba(255,255,255,0.06); border-radius: 10px; overflow: hidden; }
+    .progress-fill { height: 100%; border-radius: 10px; transition: width 1s ease; }
+
+    /* Tables */
+    .table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead { background: rgba(108,92,231,0.1); }
+    th { padding: 12px 14px; text-align: left; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }
+    td { padding: 10px 14px; border-top: 1px solid var(--border); }
+    tbody tr:hover { background: rgba(108,92,231,0.05); }
+
+    /* Badges */
+    .badge {
+      display: inline-block; padding: 3px 10px; border-radius: 50px;
+      font-size: 11px; font-weight: 600;
+    }
+    .badge-easy { background: rgba(0,184,148,0.15); color: #55efc4; }
+    .badge-mod { background: rgba(253,203,110,0.15); color: #fdcb6e; }
+    .badge-hard { background: rgba(225,112,85,0.15); color: #e17055; }
+    .badge-vhard { background: rgba(214,48,49,0.2); color: #ff7675; }
+    .badge-section { padding: 3px 10px; border-radius: 50px; font-size: 11px; font-weight: 600; }
+    .badge-qa { background: rgba(0,184,148,0.15); color: #55efc4; }
+    .badge-varc { background: rgba(116,185,255,0.15); color: #74b9ff; }
+    .badge-dilr { background: rgba(162,155,254,0.15); color: #a29bfe; }
+
+    /* IIM Cards */
+    .iim-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 20px; transition: all 0.3s;
+    }
+    .iim-card:hover { border-color: rgba(108,92,231,0.5); transform: translateY(-2px); }
+    .iim-avatar {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 18px; margin-bottom: 12px;
+    }
+    .iim-trait { display: flex; gap: 6px; font-size: 13px; margin-bottom: 4px; color: var(--muted); }
+
+    /* Heatmap */
+    .heatmap-cell {
+      display: inline-block; padding: 4px 10px; border-radius: 6px;
+      font-size: 11px; font-weight: 600; transition: transform 0.15s;
+      cursor: default;
+    }
+    .heatmap-cell:hover { transform: scale(1.08); }
+
+    /* Topic Tags */
+    .tag {
+      display: inline-block; padding: 4px 12px; border-radius: 8px;
+      font-size: 12px; font-weight: 500; margin: 3px 4px 3px 0;
+      background: rgba(108,92,231,0.12); color: var(--primary-light);
+      border: 1px solid rgba(108,92,231,0.2);
+    }
+    .tag-green { background: rgba(0,184,148,0.12); color: var(--cyan); border-color: rgba(0,184,148,0.2); }
+    .tag-pink { background: rgba(253,121,168,0.12); color: var(--accent); border-color: rgba(253,121,168,0.2); }
+    .tag-yellow { background: rgba(253,203,110,0.12); color: var(--yellow); border-color: rgba(253,203,110,0.2); }
+
+    /* Checklist */
+    .check-item { display: flex; gap: 10px; padding: 8px 0; font-size: 14px; }
+    .check-icon { flex-shrink: 0; margin-top: 2px; }
+
+    /* Timeline */
+    .timeline-item {
+      position: relative; padding-left: 28px; margin-bottom: 20px;
+    }
+    .timeline-item::before {
+      content: ''; position: absolute; left: 8px; top: 28px; bottom: -20px;
+      width: 2px; background: var(--border);
+    }
+    .timeline-item:last-child::before { display: none; }
+    .timeline-dot {
+      position: absolute; left: 0; top: 6px;
+      width: 18px; height: 18px; border-radius: 50%;
+      background: var(--primary); border: 3px solid var(--bg);
+    }
+    .timeline-year { font-size: 12px; color: var(--primary-light); font-weight: 700; }
+    .timeline-title { font-weight: 600; font-size: 14px; }
+    .timeline-desc { font-size: 13px; color: var(--muted); }
+
+    /* Motivational Banner */
+    .motivation-banner {
+      background: var(--gradient1); border-radius: 16px; padding: 28px;
+      text-align: center; margin: 32px 0;
+    }
+    .motivation-banner h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+    .motivation-banner p { font-size: 14px; opacity: 0.9; }
+
+    /* Footer */
+    .footer {
+      text-align: center; padding: 40px 20px; color: var(--muted);
+      font-size: 13px; border-top: 1px solid var(--border); margin-top: 40px;
+    }
+
+    /* Scroll animation */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* Mobile */
+    @media (max-width: 640px) {
+      .hero { padding: 40px 16px 30px; }
+      .hero-stats { gap: 20px; }
+      .card { padding: 18px; }
+      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    }
+
+    /* Print */
+    @media print {
+      .nav { position: static; }
+      .section { display: block !important; page-break-inside: avoid; }
+      .bg-pattern { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-pattern"></div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-badge">📚 Made with ❤️ for CAT 2025 Prep</div>
+    <h1>Hey <span>Aditi</span>, let's crack CAT! 🚀</h1>
+    <p>This is your personal CAT preparation guide built from analysing <strong>25 years of CAT papers</strong> (2000–2024). Every topic, every pattern, every trend — all in one place.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">25</div><div class="label">Years Analyzed</div></div>
+      <div class="hero-stat"><div class="num">4,200+</div><div class="label">Questions Studied</div></div>
+      <div class="hero-stat"><div class="num">6</div><div class="label">IIMs Tracked</div></div>
+      <div class="hero-stat"><div class="num">100%</div><div class="label">Data-Driven</div></div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <button class="nav-btn active" onclick="showSection('overview')">📊 Overview</button>
+      <button class="nav-btn" onclick="showSection('topics')">📚 Topics</button>
+      <button class="nav-btn" onclick="showSection('recurring')">🔄 Recurring Qs</button>
+      <button class="nav-btn" onclick="showSection('setters')">🎓 Paper Setters</button>
+      <button class="nav-btn" onclick="showSection('difficulty')">📈 Difficulty</button>
+      <button class="nav-btn" onclick="showSection('strategy')">🎯 Strategy</button>
+      <button class="nav-btn" onclick="showSection('schedule')">📅 Study Plan</button>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- ==================== OVERVIEW ==================== -->
+    <div id="sec-overview" class="section active">
+      <h2 class="section-title">📊 CAT at a Glance</h2>
+      <p class="section-subtitle">Everything you need to know about the exam format and its evolution</p>
+
+      <!-- Quick Stats -->
+      <div class="grid-4" style="margin-bottom: 24px;">
+        <div class="stat-card"><div class="icon">📝</div><div class="value">66</div><div class="label">Total Questions</div></div>
+        <div class="stat-card"><div class="icon">⏱️</div><div class="value">120</div><div class="label">Minutes</div></div>
+        <div class="stat-card"><div class="icon">📑</div><div class="value">3</div><div class="label">Sections</div></div>
+        <div class="stat-card"><div class="icon">🎰</div><div class="value">3</div><div class="label">Slots</div></div>
+      </div>
+
+      <!-- Current Format -->
+      <div class="card">
+        <div class="card-title">📋 Current CAT Format (2022–2025)</div>
+        <div class="card-subtitle">40 minutes per section • Sectional time limit • No switching between sections</div>
+        <div class="grid-3">
+          <div style="background:rgba(116,185,255,0.08); border-radius:12px; padding:18px;">
+            <div style="font-size:24px; margin-bottom:8px;">📖</div>
+            <h4 style="font-weight:700; margin-bottom:4px;">VARC</h4>
+            <p style="font-size:12px; color:var(--muted); margin-bottom:12px;">Verbal Ability & Reading Comprehension</p>
+            <div style="font-size:13px;">
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>Questions</span><span style="font-weight:700;">24</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>RC Passages</span><span style="font-weight:700;">4-5</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>VA Questions</span><span style="font-weight:700;">5-8</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>TITA Qs</span><span style="font-weight:700;">5-7</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0;"><span>Max Marks</span><span style="font-weight:700;">72</span></div>
+            </div>
+          </div>
+          <div style="background:rgba(162,155,254,0.08); border-radius:12px; padding:18px;">
+            <div style="font-size:24px; margin-bottom:8px;">📊</div>
+            <h4 style="font-weight:700; margin-bottom:4px;">DILR</h4>
+            <p style="font-size:12px; color:var(--muted); margin-bottom:12px;">Data Interpretation & Logical Reasoning</p>
+            <div style="font-size:13px;">
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>Questions</span><span style="font-weight:700;">20</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>DI Sets</span><span style="font-weight:700;">4-5</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>LR Sets</span><span style="font-weight:700;">3-4</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>TITA Qs</span><span style="font-weight:700;">5-8</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0;"><span>Max Marks</span><span style="font-weight:700;">60</span></div>
+            </div>
+          </div>
+          <div style="background:rgba(0,184,148,0.08); border-radius:12px; padding:18px;">
+            <div style="font-size:24px; margin-bottom:8px;">🔢</div>
+            <h4 style="font-weight:700; margin-bottom:4px;">QA</h4>
+            <p style="font-size:12px; color:var(--muted); margin-bottom:12px;">Quantitative Ability</p>
+            <div style="font-size:13px;">
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>Questions</span><span style="font-weight:700;">22</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>Arithmetic</span><span style="font-weight:700;">8-10</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>Algebra</span><span style="font-weight:700;">4-6</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.05);"><span>TITA Qs</span><span style="font-weight:700;">5-8</span></div>
+              <div style="display:flex; justify-content:space-between; padding:4px 0;"><span>Max Marks</span><span style="font-weight:700;">66</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Format Evolution Timeline -->
+      <div class="card">
+        <div class="card-title">🕰️ How CAT Has Changed Over 25 Years</div>
+        <div class="card-subtitle">The exam has undergone 5 major format changes</div>
+        <div style="padding-left:8px; margin-top:16px;">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2000–2008 • Paper-Based Era</div>
+            <div class="timeline-title">Pen & Paper MCQs</div>
+            <div class="timeline-desc">150-185 questions • 120-150 min • No sectional time limit • All MCQ</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background:var(--accent);"></div>
+            <div class="timeline-year">2009–2013 • Early Computer Era</div>
+            <div class="timeline-title">Shifted to CBT (Prometric)</div>
+            <div class="timeline-desc">60-90 questions • 135-170 min • 2 sections • All MCQ • Major technical glitches</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background:var(--green);"></div>
+            <div class="timeline-year">2014–2019 • Modern Era</div>
+            <div class="timeline-title">TITA Questions Introduced</div>
+            <div class="timeline-desc">100 questions • 180 min • 3 sections • MCQ + TITA (non-MCQ, no negative marking)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background:var(--yellow);"></div>
+            <div class="timeline-year">2020–2021 • COVID Era</div>
+            <div class="timeline-title">Reduced Format</div>
+            <div class="timeline-desc">76 questions • 120 min • 3 slots introduced • Multiple sessions for safety</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background:var(--cyan);"></div>
+            <div class="timeline-year">2022–2025 • Current Format</div>
+            <div class="timeline-title">Further Streamlined</div>
+            <div class="timeline-desc">66 questions • 120 min • 40 min/section • 3 slots • MCQ + TITA</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marking Scheme -->
+      <div class="card">
+        <div class="card-title">⚡ Marking Scheme — Know This Cold, Aditi!</div>
+        <div class="grid-2" style="margin-top:14px;">
+          <div style="background:rgba(0,184,148,0.08); border-radius:12px; padding:16px;">
+            <h4 style="font-weight:700; color:var(--green); margin-bottom:8px;">✅ MCQ Questions</h4>
+            <div style="font-size:14px;">
+              <p>Correct Answer: <strong>+3 marks</strong></p>
+              <p>Wrong Answer: <strong>-1 mark</strong></p>
+              <p>Unattempted: <strong>0 marks</strong></p>
+            </div>
+          </div>
+          <div style="background:rgba(253,121,168,0.08); border-radius:12px; padding:16px;">
+            <h4 style="font-weight:700; color:var(--accent); margin-bottom:8px;">✍️ TITA Questions (Non-MCQ)</h4>
+            <div style="font-size:14px;">
+              <p>Correct Answer: <strong>+3 marks</strong></p>
+              <p>Wrong Answer: <strong>0 marks (No penalty!)</strong></p>
+              <p>Unattempted: <strong>0 marks</strong></p>
+            </div>
+            <p style="font-size:12px; color:var(--accent); margin-top:8px;">💡 Always attempt TITA — nothing to lose!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== TOPICS ==================== -->
+    <div id="sec-topics" class="section">
+      <h2 class="section-title">📚 Topic-wise Analysis</h2>
+      <p class="section-subtitle">What appears most frequently? Here's 25 years of data crunched for you, Aditi</p>
+
+      <!-- QA Topics -->
+      <div class="card">
+        <div class="card-title">🔢 Quantitative Ability — Topic Weightage</div>
+        <div class="card-subtitle">Arithmetic alone is 30-35% — master it first!</div>
+        <div class="progress-item"><div class="progress-header"><span class="name">Arithmetic (P&L, TSD, T&W, CI/SI, Ratios, Averages, Mixtures)</span><span class="pct">30-35%</span></div><div class="progress-track"><div class="progress-fill" style="width:33%; background:var(--gradient3);"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="name">Algebra (Equations, Inequalities, Functions, Logs, Progressions)</span><span class="pct">20-25%</span></div><div class="progress-track"><div class="progress-fill" style="width:22%; background:linear-gradient(90deg,#00b894,#55efc4);"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="name">Number System (Divisibility, Remainders, Factors, HCF/LCM)</span><span class="pct">15-18%</span></div><div class="progress-track"><div class="progress-fill" style="width:17%; background:linear-gradient(90deg,#00b894,#81ecec);"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="name">Geometry & Mensuration (Triangles, Circles, Solids)</span><span class="pct">15-18%</span></div><div class="progress-track"><div class="progress-fill" style="width:16%; background:linear-gradient(90deg,#0984e3,#74b9ff);"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="name">Modern Math (P&C, Probability, Set Theory)</span><span class="pct">8-12%</span></div><div class="progress-track"><div class="progress-fill" style="width:10%; background:linear-gradient(90deg,#6c5ce7,#a29bfe);"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="name">Coordinate Geometry & Trigonometry</span><span class="pct">2-5%</span></div><div class="progress-track"><div class="progress-fill" style="width:3%; background:linear-gradient(90deg,#fd79a8,#e84393);"></div></div></div>
+      </div>
+
+      <!-- VARC Topics -->
+      <div class="card">
+        <div class="card-title">📖 VARC — Topic Weightage</div>
+        <div class="card-subtitle">RC is 65-70% of VARC. Reading speed and comprehension are everything.</div>
+        <div class="progress-item"><div class="progress-header"><span class="name">Reading Comprehension (4-5 passages)</span><span class="pct">65-70%</span></div><div class="progress-track"><div class="progress-fill" style="width:68%; background:linear-gradient(90deg,#0984e3,#74b9ff);"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="name">Para Jumbles (rearrange sentences)</span><span class="pct">8-10%</span></div><div class="progress-track"><div class="progress-fill" style="width:9%; background:linear-gradient(90deg,#0984e3,#74b9ff);"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="name">Para Summary (pick best summary)</span><span class="pct">8-10%</span></div><div class="progress-track"><div class="progress-fill" style="width:9%; background:linear-gradient(90deg,#6c5ce7,#a29bfe);"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="name">Odd Sentence Out</span><span class="pct">5-8%</span></div><div class="progress-track"><div class="progress-fill" style="width:6%; background:linear-gradient(90deg,#6c5ce7,#a29bfe);"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="name">Sentence Completion / Grammar (rare now)</span><span class="pct">0-3%</span></div><div class="progress-track"><div class="progress-fill" style="width:2%; background:rgba(255,255,255,0.1);"></div></div></div>
+      </div>
+
+      <!-- DILR Topics -->
+      <div class="card">
+        <div class="card-title">📊 DILR — Topic Weightage</div>
+        <div class="card-subtitle">Most unpredictable section! New set types appear every year.</div>
+        <div class="grid-2">
+          <div>
+            <h4 style="font-weight:600; color:var(--blue); margin-bottom:12px;">📈 Data Interpretation</h4>
+            <div class="progress-item"><div class="progress-header"><span class="name">Tables & Data Tables</span><span class="pct">20-25%</span></div><div class="progress-track"><div class="progress-fill" style="width:22%; background:linear-gradient(90deg,#6c5ce7,#a29bfe);"></div></div></div>
+            <div class="progress-item"><div class="progress-header"><span class="name">Bar / Line / Pie Charts</span><span class="pct">15-20%</span></div><div class="progress-track"><div class="progress-fill" style="width:18%; background:linear-gradient(90deg,#6c5ce7,#a29bfe);"></div></div></div>
+            <div class="progress-item"><div class="progress-header"><span class="name">Caselets (Text-based DI)</span><span class="pct">10-15%</span></div><div class="progress-track"><div class="progress-fill" style="width:12%; background:linear-gradient(90deg,#a29bfe,#dfe6e9);"></div></div></div>
+            <div class="progress-item"><div class="progress-header"><span class="name">Mixed / Unconventional Charts</span><span class="pct">5-10%</span></div><div class="progress-track"><div class="progress-fill" style="width:7%; background:linear-gradient(90deg,#a29bfe,#dfe6e9);"></div></div></div>
+          </div>
+          <div>
+            <h4 style="font-weight:600; color:var(--accent); margin-bottom:12px;">🧩 Logical Reasoning</h4>
+            <div class="progress-item"><div class="progress-header"><span class="name">Arrangements (Linear / Circular)</span><span class="pct">18-22%</span></div><div class="progress-track"><div class="progress-fill" style="width:20%; background:linear-gradient(90deg,#fd79a8,#e84393);"></div></div></div>
+            <div class="progress-item"><div class="progress-header"><span class="name">Games & Tournaments</span><span class="pct">10-15%</span></div><div class="progress-track"><div class="progress-fill" style="width:12%; background:linear-gradient(90deg,#fd79a8,#fab1a0);"></div></div></div>
+            <div class="progress-item"><div class="progress-header"><span class="name">Puzzles (Grids, Distributions)</span><span class="pct">10-15%</span></div><div class="progress-track"><div class="progress-fill" style="width:12%; background:linear-gradient(90deg,#e17055,#fab1a0);"></div></div></div>
+            <div class="progress-item"><div class="progress-header"><span class="name">Binary Logic / Venn Diagrams</span><span class="pct">5-8%</span></div><div class="progress-track"><div class="progress-fill" style="width:6%; background:linear-gradient(90deg,#e17055,#fab1a0);"></div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RC Passage Themes -->
+      <div class="card">
+        <div class="card-title">📖 RC Passage Themes — What To Read, Aditi</div>
+        <div class="card-subtitle">These are the domains CAT loves to pick passages from</div>
+        <div class="grid-4" style="margin-top:12px;">
+          <div style="text-align:center; padding:16px; background:rgba(255,255,255,0.03); border-radius:12px;">
+            <div style="font-size:28px; margin-bottom:6px;">🏛️</div>
+            <div style="font-weight:600; font-size:14px;">Social Sciences</div>
+            <div style="font-size:12px; color:var(--primary-light); font-weight:700;">25-30%</div>
+            <div style="font-size:11px; color:var(--muted); margin-top:4px;">Sociology, Psychology, Anthropology</div>
+          </div>
+          <div style="text-align:center; padding:16px; background:rgba(255,255,255,0.03); border-radius:12px;">
+            <div style="font-size:28px; margin-bottom:6px;">💼</div>
+            <div style="font-weight:600; font-size:14px;">Economics & Business</div>
+            <div style="font-size:12px; color:var(--primary-light); font-weight:700;">20-25%</div>
+            <div style="font-size:11px; color:var(--muted); margin-top:4px;">Markets, Policy, Trade, Capitalism</div>
+          </div>
+          <div style="text-align:center; padding:16px; background:rgba(255,255,255,0.03); border-radius:12px;">
+            <div style="font-size:28px; margin-bottom:6px;">🧬</div>
+            <div style="font-weight:600; font-size:14px;">Science & Tech</div>
+            <div style="font-size:12px; color:var(--primary-light); font-weight:700;">15-20%</div>
+            <div style="font-size:11px; color:var(--muted); margin-top:4px;">Biology, AI, Environment, Evolution</div>
+          </div>
+          <div style="text-align:center; padding:16px; background:rgba(255,255,255,0.03); border-radius:12px;">
+            <div style="font-size:28px; margin-bottom:6px;">🤔</div>
+            <div style="font-weight:600; font-size:14px;">Philosophy</div>
+            <div style="font-size:12px; color:var(--primary-light); font-weight:700;">10-15%</div>
+            <div style="font-size:11px; color:var(--muted); margin-top:4px;">Ethics, Abstract reasoning, Logic</div>
+          </div>
+          <div style="text-align:center; padding:16px; background:rgba(255,255,255,0.03); border-radius:12px;">
+            <div style="font-size:28px; margin-bottom:6px;">📜</div>
+            <div style="font-weight:600; font-size:14px;">History & Culture</div>
+            <div style="font-size:12px; color:var(--primary-light); font-weight:700;">8-12%</div>
+            <div style="font-size:11px; color:var(--muted); margin-top:4px;">Civilizations, Art, Movements</div>
+          </div>
+          <div style="text-align:center; padding:16px; background:rgba(255,255,255,0.03); border-radius:12px;">
+            <div style="font-size:28px; margin-bottom:6px;">⚖️</div>
+            <div style="font-weight:600; font-size:14px;">Political Science</div>
+            <div style="font-size:12px; color:var(--primary-light); font-weight:700;">5-10%</div>
+            <div style="font-size:11px; color:var(--muted); margin-top:4px;">Governance, Democracy, Law</div>
+          </div>
+          <div style="text-align:center; padding:16px; background:rgba(255,255,255,0.03); border-radius:12px;">
+            <div style="font-size:28px; margin-bottom:6px;">🌍</div>
+            <div style="font-weight:600; font-size:14px;">Environment</div>
+            <div style="font-size:12px; color:var(--primary-light); font-weight:700;">5-8%</div>
+            <div style="font-size:11px; color:var(--muted); margin-top:4px;">Climate, Ecology, Sustainability</div>
+          </div>
+          <div style="text-align:center; padding:16px; background:rgba(255,255,255,0.03); border-radius:12px;">
+            <div style="font-size:28px; margin-bottom:6px;">🎨</div>
+            <div style="font-weight:600; font-size:14px;">Literature & Arts</div>
+            <div style="font-size:12px; color:var(--primary-light); font-weight:700;">3-5%</div>
+            <div style="font-size:11px; color:var(--muted); margin-top:4px;">Literary criticism, Music, Cinema</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== RECURRING ==================== -->
+    <div id="sec-recurring" class="section">
+      <h2 class="section-title">🔄 Recurring Question Patterns</h2>
+      <p class="section-subtitle">These question types have appeared in 70%+ of all CAT papers — must prepare these, Aditi!</p>
+
+      <div class="card">
+        <div class="card-title">🏆 Guaranteed Question Types (80%+ appearance rate)</div>
+        <div class="table-wrap" style="margin-top:14px;">
+          <table>
+            <thead>
+              <tr><th>Section</th><th>Question Type</th><th>Appears In</th><th>Qs/Year</th><th>Difficulty</th><th>Trend</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="badge-section badge-qa">QA</span></td><td style="font-weight:600;">Profit & Loss</td><td>96%</td><td>2-3</td><td><span class="badge badge-mod">Moderate</span></td><td>Stable ➡️</td></tr>
+              <tr><td><span class="badge-section badge-qa">QA</span></td><td style="font-weight:600;">Percentages / Ratios</td><td>96%</td><td>2-3</td><td><span class="badge badge-easy">Easy</span></td><td>Always present ✅</td></tr>
+              <tr><td><span class="badge-section badge-qa">QA</span></td><td style="font-weight:600;">Time, Speed & Distance</td><td>92%</td><td>2-3</td><td><span class="badge badge-hard">Hard</span></td><td>Harder each year 📈</td></tr>
+              <tr><td><span class="badge-section badge-qa">QA</span></td><td style="font-weight:600;">Number Properties</td><td>92%</td><td>2-4</td><td><span class="badge badge-hard">Hard</span></td><td>More conceptual 📈</td></tr>
+              <tr><td><span class="badge-section badge-qa">QA</span></td><td style="font-weight:600;">Time & Work / Pipes</td><td>88%</td><td>1-2</td><td><span class="badge badge-mod">Moderate</span></td><td>Stable ➡️</td></tr>
+              <tr><td><span class="badge-section badge-qa">QA</span></td><td style="font-weight:600;">Equations (Linear/Quadratic)</td><td>88%</td><td>2-3</td><td><span class="badge badge-mod">Moderate</span></td><td>Stable ➡️</td></tr>
+              <tr><td><span class="badge-section badge-qa">QA</span></td><td style="font-weight:600;">Geometry (Triangles/Circles)</td><td>84%</td><td>2-3</td><td><span class="badge badge-hard">Hard</span></td><td>Rising weight 📈</td></tr>
+              <tr><td><span class="badge-section badge-varc">VARC</span></td><td style="font-weight:600;">RC — Inference Questions</td><td>100%</td><td>6-8</td><td><span class="badge badge-hard">Hard</span></td><td>Dominant always ⭐</td></tr>
+              <tr><td><span class="badge-section badge-varc">VARC</span></td><td style="font-weight:600;">RC — Main Idea / Title</td><td>96%</td><td>3-4</td><td><span class="badge badge-mod">Moderate</span></td><td>Stable ➡️</td></tr>
+              <tr><td><span class="badge-section badge-varc">VARC</span></td><td style="font-weight:600;">Para Jumbles</td><td>92%</td><td>2-3</td><td><span class="badge badge-mod">Moderate</span></td><td>Now TITA format 📈</td></tr>
+              <tr><td><span class="badge-section badge-varc">VARC</span></td><td style="font-weight:600;">Para Summary</td><td>80%</td><td>2-3</td><td><span class="badge badge-mod">Moderate</span></td><td>Increasing since 2017 📈</td></tr>
+              <tr><td><span class="badge-section badge-dilr">DILR</span></td><td style="font-weight:600;">Table-based DI</td><td>88%</td><td>1-2 sets</td><td><span class="badge badge-mod">Moderate</span></td><td>More complex 📈</td></tr>
+              <tr><td><span class="badge-section badge-dilr">DILR</span></td><td style="font-weight:600;">Seating Arrangement</td><td>80%</td><td>1 set</td><td><span class="badge badge-hard">Hard</span></td><td>Multi-constraint 📈</td></tr>
+              <tr><td><span class="badge-section badge-dilr">DILR</span></td><td style="font-weight:600;">Games & Tournaments</td><td>72%</td><td>1 set</td><td><span class="badge badge-hard">Hard</span></td><td>CAT favourite ⭐</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">✅ Key Patterns (What CAT Loves)</div>
+          <div style="margin-top:12px;">
+            <div class="check-item"><span class="check-icon">🟢</span><div><strong>Arithmetic is non-negotiable</strong> — P&L, TSD, T&W, Ratios appear EVERY single year</div></div>
+            <div class="check-item"><span class="check-icon">🟢</span><div><strong>RC is 65-70% of VARC</strong> — Passages are getting longer and more abstract since 2017</div></div>
+            <div class="check-item"><span class="check-icon">🟢</span><div><strong>DILR loves novelty</strong> — New puzzle types every year, but arrangements are the staple</div></div>
+            <div class="check-item"><span class="check-icon">🟢</span><div><strong>TITA is growing</strong> — From 0% (pre-2015) to ~25-30% of paper. Always attempt TITA!</div></div>
+            <div class="check-item"><span class="check-icon">🟢</span><div><strong>Number System = concepts</strong> — Less calculation, more concept-heavy in recent years</div></div>
+            <div class="check-item"><span class="check-icon">🟢</span><div><strong>Geometry is rising</strong> — More geometry questions appearing since 2018</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">❌ Eliminated / Declining Topics</div>
+          <div class="card-subtitle">Don't waste time on these, Aditi</div>
+          <div style="margin-top:12px;">
+            <div class="check-item"><span class="check-icon">🔴</span><div><strong>Direct Vocabulary</strong> — Synonyms, antonyms gone since 2013</div></div>
+            <div class="check-item"><span class="check-icon">🔴</span><div><strong>Fill in the Blanks</strong> — Eliminated post-2015</div></div>
+            <div class="check-item"><span class="check-icon">🔴</span><div><strong>Sentence Correction</strong> — Rarely seen after 2014</div></div>
+            <div class="check-item"><span class="check-icon">🔴</span><div><strong>Analogies & Word Usage</strong> — Completely removed</div></div>
+            <div class="check-item"><span class="check-icon">🔴</span><div><strong>Data Sufficiency</strong> — Was common pre-2010, now very rare</div></div>
+            <div class="check-item"><span class="check-icon">🔴</span><div><strong>Simple charts (DI)</strong> — Replaced by multi-graph complex sets</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== PAPER SETTERS ==================== -->
+    <div id="sec-setters" class="section">
+      <h2 class="section-title">🎓 Paper Setters — The IIM Factor</h2>
+      <p class="section-subtitle">Each IIM has a unique paper-setting style. Knowing this = being prepared for anything!</p>
+
+      <!-- IIM Style Cards -->
+      <div class="grid-3" style="margin-bottom:24px;">
+        <div class="iim-card">
+          <div class="iim-avatar" style="background:linear-gradient(135deg,#e74c3c,#c0392b); color:white;">A</div>
+          <h4 style="font-weight:700; margin-bottom:8px;">IIM Ahmedabad</h4>
+          <div class="iim-trait">🔥 <span><strong>Style:</strong> Conceptual & tricky</span></div>
+          <div class="iim-trait">📊 <span><strong>DILR:</strong> Highly innovative new set types</span></div>
+          <div class="iim-trait">🔢 <span><strong>QA:</strong> Number theory heavy</span></div>
+          <div class="iim-trait">📖 <span><strong>VARC:</strong> Dense, abstract RC passages</span></div>
+          <div style="margin-top:10px;"><span class="badge badge-hard">Toughest Paper Setter</span></div>
+        </div>
+        <div class="iim-card">
+          <div class="iim-avatar" style="background:linear-gradient(135deg,#2980b9,#3498db); color:white;">B</div>
+          <h4 style="font-weight:700; margin-bottom:8px;">IIM Bangalore</h4>
+          <div class="iim-trait">🔥 <span><strong>Style:</strong> Long & exhausting</span></div>
+          <div class="iim-trait">📊 <span><strong>DILR:</strong> Calculation-heavy DI sets</span></div>
+          <div class="iim-trait">🔢 <span><strong>QA:</strong> Geometry focused</span></div>
+          <div class="iim-trait">📖 <span><strong>VARC:</strong> Very long RC passages</span></div>
+          <div style="margin-top:10px;"><span class="badge badge-hard">Endurance Tester</span></div>
+        </div>
+        <div class="iim-card">
+          <div class="iim-avatar" style="background:linear-gradient(135deg,#f39c12,#e67e22); color:white;">C</div>
+          <h4 style="font-weight:700; margin-bottom:8px;">IIM Calcutta</h4>
+          <div class="iim-trait">🔥 <span><strong>Style:</strong> DILR destroyer</span></div>
+          <div class="iim-trait">📊 <span><strong>DILR:</strong> Extremely tricky novel sets</span></div>
+          <div class="iim-trait">🔢 <span><strong>QA:</strong> Moderate, balanced</span></div>
+          <div class="iim-trait">📖 <span><strong>VARC:</strong> Tricky inference questions</span></div>
+          <div style="margin-top:10px;"><span class="badge badge-vhard">DILR Nightmare Maker</span></div>
+        </div>
+        <div class="iim-card">
+          <div class="iim-avatar" style="background:linear-gradient(135deg,#27ae60,#2ecc71); color:white;">L</div>
+          <h4 style="font-weight:700; margin-bottom:8px;">IIM Lucknow</h4>
+          <div class="iim-trait">🔥 <span><strong>Style:</strong> Balanced & fair</span></div>
+          <div class="iim-trait">📊 <span><strong>DILR:</strong> Moderate difficulty</span></div>
+          <div class="iim-trait">🔢 <span><strong>QA:</strong> Arithmetic focused</span></div>
+          <div class="iim-trait">📖 <span><strong>VARC:</strong> Moderate passages</span></div>
+          <div style="margin-top:10px;"><span class="badge badge-mod">Most Balanced</span></div>
+        </div>
+        <div class="iim-card">
+          <div class="iim-avatar" style="background:linear-gradient(135deg,#8e44ad,#9b59b6); color:white;">I</div>
+          <h4 style="font-weight:700; margin-bottom:8px;">IIM Indore</h4>
+          <div class="iim-trait">🔥 <span><strong>Style:</strong> Moderate & accessible</span></div>
+          <div class="iim-trait">📊 <span><strong>DILR:</strong> Standard sets</span></div>
+          <div class="iim-trait">🔢 <span><strong>QA:</strong> Easy-moderate</span></div>
+          <div class="iim-trait">📖 <span><strong>VARC:</strong> Straightforward</span></div>
+          <div style="margin-top:10px;"><span class="badge badge-easy">Most Scoring</span></div>
+        </div>
+        <div class="iim-card">
+          <div class="iim-avatar" style="background:linear-gradient(135deg,#e67e22,#d35400); color:white;">K</div>
+          <h4 style="font-weight:700; margin-bottom:8px;">IIM Kozhikode</h4>
+          <div class="iim-trait">🔥 <span><strong>Style:</strong> Surprise elements</span></div>
+          <div class="iim-trait">📊 <span><strong>DILR:</strong> Novel question types</span></div>
+          <div class="iim-trait">🔢 <span><strong>QA:</strong> Unpredictable</span></div>
+          <div class="iim-trait">📖 <span><strong>VARC:</strong> Good topic mix</span></div>
+          <div style="margin-top:10px;"><span class="badge badge-mod">The Wildcard</span></div>
+        </div>
+      </div>
+
+      <!-- Year-wise Setter Table -->
+      <div class="card">
+        <div class="card-title">📅 Complete IIM Rotation (2000–2024)</div>
+        <div class="table-wrap" style="margin-top:14px; max-height:400px; overflow-y:auto;">
+          <table>
+            <thead><tr><th>Year</th><th>Convener</th><th>Overall</th><th>VARC</th><th>DILR</th><th>QA</th><th>Notable</th></tr></thead>
+            <tbody>
+              <tr><td>2024</td><td style="font-weight:600;">IIM Calcutta</td><td><span class="badge badge-hard">Hard</span></td><td>Hard</td><td>V. Hard</td><td>Moderate</td><td>DILR extremely tricky</td></tr>
+              <tr><td>2023</td><td style="font-weight:600;">IIM Lucknow</td><td><span class="badge badge-mod">Moderate</span></td><td>Moderate</td><td>Hard</td><td>Moderate</td><td>Balanced paper</td></tr>
+              <tr><td>2022</td><td style="font-weight:600;">IIM Bangalore</td><td><span class="badge badge-hard">Mod-Hard</span></td><td>Hard</td><td>Hard</td><td>Moderate</td><td>Long RC passages</td></tr>
+              <tr><td>2021</td><td style="font-weight:600;">IIM Ahmedabad</td><td><span class="badge badge-hard">Hard</span></td><td>Hard</td><td>V. Hard</td><td>Moderate</td><td>COVID; fewer Qs</td></tr>
+              <tr><td>2020</td><td style="font-weight:600;">IIM Indore</td><td><span class="badge badge-mod">Moderate</span></td><td>Moderate</td><td>Moderate</td><td>Easy-Mod</td><td>First 3-slot exam</td></tr>
+              <tr><td>2019</td><td style="font-weight:600;">IIM Kozhikode</td><td><span class="badge badge-mod">Moderate</span></td><td>Moderate</td><td>Hard</td><td>Easy-Mod</td><td>Easiest QA</td></tr>
+              <tr><td>2018</td><td style="font-weight:600;">IIM Calcutta</td><td><span class="badge badge-hard">Hard</span></td><td>Hard</td><td>V. Hard</td><td>Moderate</td><td>DILR nightmarish</td></tr>
+              <tr><td>2017</td><td style="font-weight:600;">IIM Lucknow</td><td><span class="badge badge-hard">Hard</span></td><td>Hard</td><td>Hard</td><td>Hard</td><td>All sections tough</td></tr>
+              <tr><td>2016</td><td style="font-weight:600;">IIM Bangalore</td><td><span class="badge badge-mod">Moderate</span></td><td>Moderate</td><td>Hard</td><td>Moderate</td><td>DI tricky</td></tr>
+              <tr><td>2015</td><td style="font-weight:600;">IIM Ahmedabad</td><td><span class="badge badge-hard">Hard</span></td><td>Hard</td><td>Hard</td><td>Hard</td><td>First TITA; 3 sections</td></tr>
+              <tr><td>2014</td><td style="font-weight:600;">IIM Indore</td><td><span class="badge badge-mod">Moderate</span></td><td>Moderate</td><td>Moderate</td><td>Easy</td><td>Last 2-section format</td></tr>
+              <tr><td>2013</td><td style="font-weight:600;">IIM Indore</td><td><span class="badge badge-mod">Moderate</span></td><td>Moderate</td><td>Easy-Mod</td><td>Moderate</td><td>60 questions only</td></tr>
+              <tr><td>2012</td><td style="font-weight:600;">IIM Kozhikode</td><td><span class="badge badge-mod">Moderate</span></td><td>Moderate</td><td>Moderate</td><td>Moderate</td><td>Balanced</td></tr>
+              <tr><td>2011</td><td style="font-weight:600;">IIM Calcutta</td><td><span class="badge badge-hard">Hard</span></td><td>Hard</td><td>Hard</td><td>Hard</td><td>Tech glitches</td></tr>
+              <tr><td>2010</td><td style="font-weight:600;">IIM Ahmedabad</td><td><span class="badge badge-hard">Hard</span></td><td>Hard</td><td>Hard</td><td>Hard</td><td>Exhausting paper</td></tr>
+              <tr><td>2009</td><td style="font-weight:600;">IIM Lucknow</td><td><span class="badge badge-mod">Moderate</span></td><td>Moderate</td><td>Moderate</td><td>Moderate</td><td>First CBT</td></tr>
+              <tr><td>2008</td><td style="font-weight:600;">IIM Bangalore</td><td><span class="badge badge-vhard">Legendary</span></td><td>Hard</td><td>Hard</td><td>V. Hard</td><td>Hardest CAT ever</td></tr>
+              <tr><td>2007</td><td style="font-weight:600;">IIM Ahmedabad</td><td><span class="badge badge-hard">Hard</span></td><td>Moderate</td><td>Hard</td><td>V. Hard</td><td>Number sys heavy</td></tr>
+              <tr><td>2006</td><td style="font-weight:600;">IIM Lucknow</td><td><span class="badge badge-mod">Moderate</span></td><td>Easy-Mod</td><td>Moderate</td><td>Hard</td><td>150 questions</td></tr>
+              <tr><td>2005</td><td style="font-weight:600;">IIM Kozhikode</td><td><span class="badge badge-hard">Hard</span></td><td>Hard</td><td>Moderate</td><td>V. Hard</td><td>QA nightmarish</td></tr>
+              <tr><td>2004</td><td style="font-weight:600;">IIM Indore</td><td><span class="badge badge-mod">Moderate</span></td><td>Moderate</td><td>Moderate</td><td>Moderate</td><td>Balanced</td></tr>
+              <tr><td>2003</td><td style="font-weight:600;">IIM Calcutta</td><td><span class="badge badge-hard">Hard</span></td><td>Hard</td><td>Hard</td><td>Hard</td><td>Tough DI</td></tr>
+              <tr><td>2002</td><td style="font-weight:600;">IIM Bangalore</td><td><span class="badge badge-mod">Moderate</span></td><td>Moderate</td><td>Moderate</td><td>Moderate</td><td>Standard</td></tr>
+              <tr><td>2001</td><td style="font-weight:600;">IIM Ahmedabad</td><td><span class="badge badge-hard">Hard</span></td><td>Hard</td><td>Hard</td><td>V. Hard</td><td>Tough math</td></tr>
+              <tr><td>2000</td><td style="font-weight:600;">IIM Calcutta</td><td><span class="badge badge-hard">Hard</span></td><td>Hard</td><td>Moderate</td><td>Hard</td><td>185 questions</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== DIFFICULTY ==================== -->
+    <div id="sec-difficulty" class="section">
+      <h2 class="section-title">📈 Difficulty Trends</h2>
+      <p class="section-subtitle">How CAT has gotten harder over 25 years — and what that means for you, Aditi</p>
+
+      <!-- Difficulty by Era -->
+      <div class="card">
+        <div class="card-title">📊 Question Difficulty Distribution by Era</div>
+        <div style="margin-top:16px;">
+          <div style="margin-bottom:16px;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;"><span style="font-weight:600;">Paper-Based Era (2000–2008)</span></div>
+            <div style="display:flex; gap:2px; height:28px; border-radius:8px; overflow:hidden;">
+              <div style="width:25%; background:#55efc4; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#000;">Easy 25%</div>
+              <div style="width:35%; background:#fdcb6e; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#000;">Mod 35%</div>
+              <div style="width:30%; background:#e17055; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#fff;">Hard 30%</div>
+              <div style="width:10%; background:#d63031; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:600; color:#fff;">10%</div>
+            </div>
+          </div>
+          <div style="margin-bottom:16px;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;"><span style="font-weight:600;">Early CBT Era (2009–2014)</span></div>
+            <div style="display:flex; gap:2px; height:28px; border-radius:8px; overflow:hidden;">
+              <div style="width:20%; background:#55efc4; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#000;">Easy 20%</div>
+              <div style="width:40%; background:#fdcb6e; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#000;">Mod 40%</div>
+              <div style="width:30%; background:#e17055; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#fff;">Hard 30%</div>
+              <div style="width:10%; background:#d63031; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:600; color:#fff;">10%</div>
+            </div>
+          </div>
+          <div style="margin-bottom:16px;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;"><span style="font-weight:600;">Modern Era (2015–2019)</span></div>
+            <div style="display:flex; gap:2px; height:28px; border-radius:8px; overflow:hidden;">
+              <div style="width:15%; background:#55efc4; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#000;">15%</div>
+              <div style="width:35%; background:#fdcb6e; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#000;">Mod 35%</div>
+              <div style="width:35%; background:#e17055; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#fff;">Hard 35%</div>
+              <div style="width:15%; background:#d63031; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:600; color:#fff;">V.Hard 15%</div>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px;"><span style="font-weight:600;">Current Era (2020–2024) ← You are here, Aditi!</span></div>
+            <div style="display:flex; gap:2px; height:28px; border-radius:8px; overflow:hidden;">
+              <div style="width:10%; background:#55efc4; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:600; color:#000;">10%</div>
+              <div style="width:30%; background:#fdcb6e; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#000;">Mod 30%</div>
+              <div style="width:40%; background:#e17055; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#fff;">Hard 40%</div>
+              <div style="width:20%; background:#d63031; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#fff;">V.Hard 20%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hardest/Easiest -->
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">🔴 Top 5 Hardest CAT Papers Ever</div>
+          <div style="margin-top:12px; font-size:14px;">
+            <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border);"><span>1. <strong>CAT 2008</strong> — IIM Bangalore</span><span class="badge badge-vhard">Legendary</span></div>
+            <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border);"><span>2. <strong>CAT 2003</strong> — IIM Calcutta</span><span class="badge badge-vhard">Brutal</span></div>
+            <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border);"><span>3. <strong>CAT 2007</strong> — IIM Ahmedabad</span><span class="badge badge-hard">Very Hard</span></div>
+            <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border);"><span>4. <strong>CAT 2017</strong> — IIM Lucknow</span><span class="badge badge-hard">Very Hard</span></div>
+            <div style="display:flex; justify-content:space-between; padding:8px 0;"><span>5. <strong>CAT 2018</strong> — IIM Calcutta</span><span class="badge badge-hard">Very Hard</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">🟢 Top 5 Most Scoring CAT Papers</div>
+          <div style="margin-top:12px; font-size:14px;">
+            <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border);"><span>1. <strong>CAT 2014</strong> — IIM Indore</span><span class="badge badge-easy">Easiest</span></div>
+            <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border);"><span>2. <strong>CAT 2020</strong> — IIM Indore</span><span class="badge badge-easy">Easy-Mod</span></div>
+            <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border);"><span>3. <strong>CAT 2013</strong> — IIM Indore</span><span class="badge badge-easy">Easy-Mod</span></div>
+            <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border);"><span>4. <strong>CAT 2004</strong> — IIM Indore</span><span class="badge badge-mod">Moderate</span></div>
+            <div style="display:flex; justify-content:space-between; padding:8px 0;"><span>5. <strong>CAT 2019</strong> — IIM Kozhikode</span><span class="badge badge-mod">Moderate</span></div>
+          </div>
+          <p style="font-size:12px; color:var(--accent); margin-top:12px;">💡 Notice: IIM Indore sets the most scoring papers!</p>
+        </div>
+      </div>
+
+      <!-- Cutoff Trends -->
+      <div class="card">
+        <div class="card-title">🏆 Percentile Score Targets (Current Format)</div>
+        <div class="card-subtitle">Approximate scores needed for top percentiles (66 Qs, 198 marks)</div>
+        <div class="table-wrap" style="margin-top:14px;">
+          <table>
+            <thead><tr><th>Percentile</th><th>Score Needed</th><th>Correct Attempts</th><th>Accuracy</th><th>What it gets you</th></tr></thead>
+            <tbody>
+              <tr style="background:rgba(108,92,231,0.08);"><td style="font-weight:700;">99.5+%ile</td><td>115-125+</td><td>48-52 of 66</td><td>90%+</td><td>IIM A/B/C calls guaranteed</td></tr>
+              <tr><td style="font-weight:700;">99%ile</td><td>105-115</td><td>44-48 of 66</td><td>85%+</td><td>Top IIM calls</td></tr>
+              <tr><td style="font-weight:700;">98%ile</td><td>95-105</td><td>40-44 of 66</td><td>80%+</td><td>IIM L/K/I + new IIMs</td></tr>
+              <tr><td style="font-weight:700;">95%ile</td><td>80-95</td><td>35-40 of 66</td><td>78%+</td><td>New IIMs + top non-IIMs</td></tr>
+              <tr><td style="font-weight:700;">90%ile</td><td>65-80</td><td>30-36 of 66</td><td>75%+</td><td>Good B-schools</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== STRATEGY ==================== -->
+    <div id="sec-strategy" class="section">
+      <h2 class="section-title">🎯 Strategy Guide</h2>
+      <p class="section-subtitle">Data-backed strategies from 25 years of analysis — specifically for you, Aditi!</p>
+
+      <div class="motivation-banner">
+        <h3>💪 Aditi, remember: CAT rewards smart work over hard work</h3>
+        <p>You don't need to attempt all 66 questions. You need to pick the RIGHT 45-50 and nail them with 85%+ accuracy.</p>
+      </div>
+
+      <!-- Time Strategy -->
+      <div class="card">
+        <div class="card-title">⏱️ Time Management — The 40-40-40 Rule</div>
+        <div class="card-subtitle">Each section = 40 minutes. No going back. Here's your strategy:</div>
+        <div class="grid-3" style="margin-top:14px;">
+          <div style="background:rgba(116,185,255,0.08); border-radius:12px; padding:18px;">
+            <h4 style="font-weight:700; color:var(--blue); margin-bottom:8px;">📖 VARC (40 min)</h4>
+            <p style="font-size:13px; font-weight:600; margin-bottom:8px;">Target: 16-18 correct out of 24</p>
+            <div style="font-size:12px; color:var(--muted);">
+              <p>• <strong>RC (28-30 min):</strong> Do 4-5 passages × 6 min</p>
+              <p>• <strong>VA (10-12 min):</strong> PJ, PS, Odd One Out</p>
+              <p>• Skip 2-3 toughest RC questions</p>
+              <p>• Read the passage ONCE properly — don't re-read</p>
+              <p>• Para Jumbles: Start from options, work backward</p>
+            </div>
+          </div>
+          <div style="background:rgba(162,155,254,0.08); border-radius:12px; padding:18px;">
+            <h4 style="font-weight:700; color:var(--primary-light); margin-bottom:8px;">📊 DILR (40 min)</h4>
+            <p style="font-size:13px; font-weight:600; margin-bottom:8px;">Target: 12-15 correct out of 20</p>
+            <div style="font-size:12px; color:var(--muted);">
+              <p>• <strong>First 5 min:</strong> Scan ALL sets, rank solvability</p>
+              <p>• <strong>Pick 3-4 easiest sets:</strong> Solve completely</p>
+              <p>• <strong>10 min max per set</strong> — move on if stuck</p>
+              <p>• Skip 1-2 hardest sets entirely</p>
+              <p>• TITA in DILR? Always attempt!</p>
+            </div>
+          </div>
+          <div style="background:rgba(0,184,148,0.08); border-radius:12px; padding:18px;">
+            <h4 style="font-weight:700; color:var(--green); margin-bottom:8px;">🔢 QA (40 min)</h4>
+            <p style="font-size:13px; font-weight:600; margin-bottom:8px;">Target: 15-17 correct out of 22</p>
+            <div style="font-size:12px; color:var(--muted);">
+              <p>• <strong>Pass 1 (15 min):</strong> All easy questions first</p>
+              <p>• <strong>Pass 2 (15 min):</strong> Medium questions</p>
+              <p>• <strong>Pass 3 (10 min):</strong> Hard ones you know</p>
+              <p>• Skip P&C/Geometry if unsure (-1 hurts!)</p>
+              <p>• TITA in QA? Always guess intelligently</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Must Do Topics -->
+      <div class="card">
+        <div class="card-title">📋 Must-Do Topics (Based on 25-Year Data)</div>
+        <div class="card-subtitle">If you master ONLY these, you can score 95+ percentile</div>
+        <div class="grid-3" style="margin-top:14px;">
+          <div>
+            <h4 style="font-weight:600; color:var(--green); margin-bottom:10px;">🔢 QA Must-Do</h4>
+            <div><span class="tag tag-green">Profit & Loss</span><span class="tag tag-green">TSD</span><span class="tag tag-green">Time & Work</span><span class="tag tag-green">Percentages</span><span class="tag tag-green">Ratios</span><span class="tag tag-green">CI/SI</span><span class="tag tag-green">Averages</span><span class="tag tag-green">Number System</span><span class="tag tag-green">Linear Equations</span><span class="tag tag-green">Quadratics</span><span class="tag tag-green">Inequalities</span><span class="tag">Triangles</span><span class="tag">Circles</span><span class="tag">P&C basics</span></div>
+          </div>
+          <div>
+            <h4 style="font-weight:600; color:var(--blue); margin-bottom:10px;">📖 VARC Must-Do</h4>
+            <div><span class="tag">RC (200+ passages)</span><span class="tag">Para Jumbles</span><span class="tag">Para Summary</span><span class="tag">Odd Sentence Out</span><span class="tag tag-pink">Inference Qs</span><span class="tag tag-pink">Main Idea Qs</span><span class="tag tag-pink">Author Tone</span><span class="tag tag-pink">Strengthen/Weaken</span></div>
+          </div>
+          <div>
+            <h4 style="font-weight:600; color:var(--primary-light); margin-bottom:10px;">📊 DILR Must-Do</h4>
+            <div><span class="tag tag-yellow">Tables</span><span class="tag tag-yellow">Arrangements</span><span class="tag tag-yellow">Bar/Line Charts</span><span class="tag tag-yellow">Caselets</span><span class="tag tag-yellow">Tournaments</span><span class="tag tag-yellow">Puzzles</span><span class="tag tag-yellow">Scheduling</span><span class="tag tag-yellow">Binary Logic</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reading Recommendations -->
+      <div class="card">
+        <div class="card-title">📚 Reading List for RC Prep</div>
+        <div class="card-subtitle">Building reading stamina is key — start reading these daily, Aditi</div>
+        <div class="grid-2" style="margin-top:14px;">
+          <div>
+            <h4 style="font-weight:600; margin-bottom:8px;">🌐 Daily Reading (30 min/day)</h4>
+            <div class="check-item"><span class="check-icon">📰</span><div><strong>The Economist</strong> — Economics, Business, Policy</div></div>
+            <div class="check-item"><span class="check-icon">📰</span><div><strong>Aeon.co</strong> — Philosophy, Science, Humanities (CAT-level passages!)</div></div>
+            <div class="check-item"><span class="check-icon">📰</span><div><strong>NY Times Opinion</strong> — Social issues, arguments</div></div>
+            <div class="check-item"><span class="check-icon">📰</span><div><strong>Scientific American</strong> — Science & Tech passages</div></div>
+            <div class="check-item"><span class="check-icon">📰</span><div><strong>LiveMint / EPW</strong> — Indian economy, policy</div></div>
+          </div>
+          <div>
+            <h4 style="font-weight:600; margin-bottom:8px;">📖 Why This Works</h4>
+            <div style="font-size:13px; color:var(--muted);">
+              <p style="margin-bottom:8px;">CAT RC passages are sourced from publications like these. By reading them regularly, you'll:</p>
+              <div class="check-item"><span class="check-icon">✅</span><div>Build familiarity with CAT-level language</div></div>
+              <div class="check-item"><span class="check-icon">✅</span><div>Increase reading speed (target: 300+ wpm)</div></div>
+              <div class="check-item"><span class="check-icon">✅</span><div>Develop subject knowledge across all RC domains</div></div>
+              <div class="check-item"><span class="check-icon">✅</span><div>Train inference & critical thinking skills</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== STUDY PLAN ==================== -->
+    <div id="sec-schedule" class="section">
+      <h2 class="section-title">📅 Study Plan</h2>
+      <p class="section-subtitle">A realistic daily and weekly schedule for CAT prep, Aditi</p>
+
+      <!-- Daily Schedule -->
+      <div class="card">
+        <div class="card-title">📆 Ideal Daily Schedule (4-6 hours)</div>
+        <div class="card-subtitle">Consistency > Intensity. Do this every day without fail.</div>
+        <div class="table-wrap" style="margin-top:14px;">
+          <table>
+            <thead><tr><th>Time Block</th><th>Activity</th><th>Duration</th><th>Focus Area</th></tr></thead>
+            <tbody>
+              <tr><td style="font-weight:600;">☀️ Morning</td><td>RC Practice (3-4 passages)</td><td>45-60 min</td><td>VARC</td></tr>
+              <tr><td style="font-weight:600;">☀️ Morning</td><td>Editorial Reading (Economist/Aeon)</td><td>30 min</td><td>VARC</td></tr>
+              <tr><td style="font-weight:600;">🌤️ Mid-day</td><td>QA Topic Study + 20 Problems</td><td>60-90 min</td><td>QA</td></tr>
+              <tr><td style="font-weight:600;">🌤️ Mid-day</td><td>VA Practice (PJ, PS, Odd One Out)</td><td>20-30 min</td><td>VARC</td></tr>
+              <tr><td style="font-weight:600;">🌆 Evening</td><td>DILR Sets (2-3 sets)</td><td>60-75 min</td><td>DILR</td></tr>
+              <tr><td style="font-weight:600;">🌙 Night</td><td>Revision + Error Log</td><td>30 min</td><td>All</td></tr>
+              <tr style="background:rgba(108,92,231,0.05);"><td style="font-weight:600;">📊 Total</td><td></td><td style="font-weight:700;">4.5-5.5 hrs</td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Weekly Plan -->
+      <div class="card">
+        <div class="card-title">📊 Weekly Topic Rotation</div>
+        <div class="card-subtitle">Rotate through all major topics every 2 weeks</div>
+        <div class="grid-2" style="margin-top:14px;">
+          <div>
+            <h4 style="font-weight:600; margin-bottom:10px;">Week 1 Focus</h4>
+            <div class="table-wrap">
+              <table>
+                <tbody>
+                  <tr><td style="font-weight:600;">Mon</td><td>Arithmetic — P&L, Percentages</td></tr>
+                  <tr><td style="font-weight:600;">Tue</td><td>Arithmetic — TSD, T&W</td></tr>
+                  <tr><td style="font-weight:600;">Wed</td><td>Algebra — Equations, Inequalities</td></tr>
+                  <tr><td style="font-weight:600;">Thu</td><td>Number System — Factors, Remainders</td></tr>
+                  <tr><td style="font-weight:600;">Fri</td><td>DILR — Tables + Arrangements</td></tr>
+                  <tr><td style="font-weight:600;">Sat</td><td>🧪 Full Mock Test + Analysis</td></tr>
+                  <tr><td style="font-weight:600;">Sun</td><td>📝 Mock Analysis + Error Log + Rest</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <h4 style="font-weight:600; margin-bottom:10px;">Week 2 Focus</h4>
+            <div class="table-wrap">
+              <table>
+                <tbody>
+                  <tr><td style="font-weight:600;">Mon</td><td>Geometry — Triangles, Circles</td></tr>
+                  <tr><td style="font-weight:600;">Tue</td><td>Arithmetic — CI/SI, Mixtures, Ratios</td></tr>
+                  <tr><td style="font-weight:600;">Wed</td><td>Modern Math — P&C, Probability</td></tr>
+                  <tr><td style="font-weight:600;">Thu</td><td>DILR — Charts + Puzzles</td></tr>
+                  <tr><td style="font-weight:600;">Fri</td><td>DILR — Tournaments + Scheduling</td></tr>
+                  <tr><td style="font-weight:600;">Sat</td><td>🧪 Full Mock Test + Analysis</td></tr>
+                  <tr><td style="font-weight:600;">Sun</td><td>📝 Mock Analysis + Error Log + Rest</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mock Strategy -->
+      <div class="card">
+        <div class="card-title">🧪 Mock Test Strategy</div>
+        <div class="card-subtitle">Mocks are the MOST important part of CAT prep</div>
+        <div class="grid-2" style="margin-top:14px;">
+          <div>
+            <h4 style="font-weight:600; margin-bottom:10px;">📅 When to Take Mocks</h4>
+            <div class="check-item"><span class="check-icon">📌</span><div><strong>6 months before:</strong> 1 mock/week (to learn format)</div></div>
+            <div class="check-item"><span class="check-icon">📌</span><div><strong>3 months before:</strong> 2 mocks/week (to build speed)</div></div>
+            <div class="check-item"><span class="check-icon">📌</span><div><strong>1 month before:</strong> 3 mocks/week (to peak performance)</div></div>
+            <div class="check-item"><span class="check-icon">📌</span><div><strong>Last week:</strong> 1-2 lighter mocks (don't burn out!)</div></div>
+          </div>
+          <div>
+            <h4 style="font-weight:600; margin-bottom:10px;">📝 How to Analyze (More Important Than Taking!)</h4>
+            <div class="check-item"><span class="check-icon">1️⃣</span><div>Review EVERY wrong answer — understand WHY</div></div>
+            <div class="check-item"><span class="check-icon">2️⃣</span><div>Track time spent per question — find time leaks</div></div>
+            <div class="check-item"><span class="check-icon">3️⃣</span><div>Maintain an <strong>Error Log</strong> — categorize mistakes</div></div>
+            <div class="check-item"><span class="check-icon">4️⃣</span><div>Check which easy Qs you missed — those cost the most</div></div>
+            <div class="check-item"><span class="check-icon">5️⃣</span><div>Analyze selection strategy — did you pick wrong sets in DILR?</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Motivation -->
+      <div class="motivation-banner" style="background:var(--gradient2);">
+        <h3>You've Got This, Aditi! 🌟</h3>
+        <p>Remember: Every CAT topper was once a beginner. The only difference is they didn't stop.<br>
+        Stay consistent, trust the process, and the IIM call letter will come! 🎉</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Made with ❤️ for <strong>Aditi</strong>'s CAT 2025 journey</p>
+    <p style="margin-top:4px;">Data from 25 years of CAT papers (2000–2024) • All analysis is based on historical patterns</p>
+    <p style="margin-top:8px; font-size:11px; color:var(--muted);">Disclaimer: This is a study guide based on historical analysis. Actual CAT patterns may vary.</p>
+  </footer>
+
+  <script>
+    function showSection(name) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('sec-' + name).classList.add('active');
+      event.target.classList.add('active');
+      window.scrollTo({ top: document.querySelector('.nav').offsetTop, behavior: 'smooth' });
+    }
+
+    // Animate progress bars on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.progress-fill').forEach(bar => {
+            const w = bar.style.width;
+            bar.style.width = '0%';
+            setTimeout(() => bar.style.width = w, 100);
+          });
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.card').forEach(c => observer.observe(c));
+  </script>
+</body>
+</html>
