@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAT 2026 Predictions & Question Bank | For Aditi 🎯</title>
+  <title>CAT 2026 PYQs & Predictions | For Aditi 🎯</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
@@ -11,89 +11,102 @@
     :root{--bg:#0f0f1a;--card:#1a1a2e;--border:#2a2a4a;--text:#e8e8f0;--muted:#8888aa;--primary:#6c5ce7;--primary-light:#a29bfe;--accent:#fd79a8;--green:#00b894;--yellow:#fdcb6e;--red:#e17055;--blue:#74b9ff;--cyan:#81ecec}
     body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
     .bg-pattern{position:fixed;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse at 20% 50%,rgba(108,92,231,.08) 0%,transparent 50%),radial-gradient(ellipse at 80% 20%,rgba(253,121,168,.06) 0%,transparent 50%);pointer-events:none;z-index:0}
-    .container{max-width:900px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+    .container{max-width:920px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
     a{color:var(--primary-light);text-decoration:none}
     a:hover{text-decoration:underline}
 
     .hero{padding:50px 20px 30px;text-align:center;background:linear-gradient(180deg,rgba(253,121,168,.12) 0%,transparent 100%)}
-    .hero h1{font-size:clamp(24px,4vw,40px);font-weight:800;margin-bottom:8px}
+    .hero h1{font-size:clamp(22px,4vw,38px);font-weight:800;margin-bottom:8px}
     .hero h1 span{background:linear-gradient(135deg,#fd79a8,#e84393);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-    .hero p{color:var(--muted);font-size:15px;max-width:650px;margin:0 auto}
+    .hero p{color:var(--muted);font-size:14px;max-width:650px;margin:0 auto}
+    .hero .stats{display:flex;gap:20px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+    .hero .stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 18px;text-align:center}
+    .hero .stat .n{font-size:20px;font-weight:800;color:var(--accent)}
+    .hero .stat .l{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
 
-    .nav{position:sticky;top:0;z-index:100;background:rgba(15,15,26,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 20px}
-    .nav-inner{max-width:900px;margin:0 auto;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+    .nav{position:sticky;top:0;z-index:100;background:rgba(15,15,26,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 20px}
+    .nav-inner{max-width:920px;margin:0 auto;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
     .nav-inner::-webkit-scrollbar{display:none}
-    .nav-btn{padding:12px 14px;font-size:12px;font-weight:500;color:var(--muted);background:none;border:none;cursor:pointer;white-space:nowrap;transition:.2s;border-bottom:2px solid transparent;font-family:inherit}
+    .nav-btn{padding:12px 12px;font-size:11px;font-weight:600;color:var(--muted);background:none;border:none;cursor:pointer;white-space:nowrap;transition:.2s;border-bottom:2px solid transparent;font-family:inherit}
     .nav-btn:hover{color:var(--text)}
     .nav-btn.active{color:var(--primary-light);border-bottom-color:var(--primary)}
 
-    .section{padding:32px 0;display:none}
+    .section{padding:28px 0;display:none}
     .section.active{display:block}
     .section-title{font-size:22px;font-weight:700;margin-bottom:4px}
-    .section-sub{color:var(--muted);font-size:13px;margin-bottom:24px}
+    .section-sub{color:var(--muted);font-size:13px;margin-bottom:20px}
 
-    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px;margin-bottom:16px;transition:border-color .3s}
-    .card:hover{border-color:rgba(108,92,231,.3)}
-    .card-title{font-size:15px;font-weight:700;margin-bottom:3px}
-    .card-sub{font-size:12px;color:var(--muted);margin-bottom:14px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px;margin-bottom:16px}
 
     .topic-header{display:flex;align-items:center;gap:10px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border)}
     .topic-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
     .topic-name{font-size:18px;font-weight:700}
     .topic-meta{font-size:12px;color:var(--muted)}
 
-    .subtype{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:14px}
-    .subtype-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:6px}
-    .subtype-name{font-size:14px;font-weight:700}
-    .badge{display:inline-block;padding:3px 10px;border-radius:50px;font-size:10px;font-weight:700}
-    .badge-hot{background:rgba(253,121,168,.15);color:#fd79a8}
-    .badge-likely{background:rgba(253,203,110,.15);color:#fdcb6e}
-    .badge-possible{background:rgba(116,185,255,.15);color:#74b9ff}
-    .badge-new{background:rgba(0,184,148,.15);color:#55efc4}
+    .pyq{background:rgba(108,92,231,.04);border:1px solid rgba(108,92,231,.12);border-radius:12px;padding:18px;margin-bottom:16px}
+    .pyq-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:6px}
+    .pyq-topic{font-size:13px;font-weight:700}
+    .year-badge{display:inline-block;padding:3px 10px;border-radius:50px;font-size:10px;font-weight:700;background:rgba(253,121,168,.12);color:#fd79a8;border:1px solid rgba(253,121,168,.2)}
+    .custom-badge{background:rgba(0,184,148,.12);color:#55efc4;border-color:rgba(0,184,148,.2)}
+    .difficulty{display:inline-block;margin-left:6px;padding:3px 8px;border-radius:50px;font-size:9px;font-weight:700}
+    .diff-hard{background:rgba(225,112,85,.12);color:#e17055}
+    .diff-mod{background:rgba(253,203,110,.12);color:#fdcb6e}
+    .diff-easy{background:rgba(0,184,148,.12);color:#55efc4}
 
-    .question-box{background:rgba(108,92,231,.06);border:1px solid rgba(108,92,231,.15);border-radius:10px;padding:14px;margin:10px 0;font-size:13px}
-    .question-box .q-label{font-size:10px;font-weight:700;color:var(--primary-light);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
-    .question-box .q-text{font-weight:500;margin-bottom:8px;line-height:1.6}
-    .question-box .q-options{margin:8px 0;padding-left:16px;color:var(--muted)}
-    .question-box .q-options div{margin:3px 0}
-
-    .answer-box{background:rgba(0,184,148,.06);border:1px solid rgba(0,184,148,.15);border-radius:10px;padding:14px;margin:6px 0;font-size:13px}
-    .answer-box .a-label{font-size:10px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
-
-    .predict-box{background:rgba(253,121,168,.06);border:1px solid rgba(253,121,168,.15);border-radius:10px;padding:14px;margin:10px 0;font-size:13px}
-    .predict-box .p-label{font-size:10px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+    .q-text{font-size:13.5px;font-weight:500;line-height:1.7;margin-bottom:10px;color:var(--text)}
+    .q-text em{color:var(--muted);font-style:normal;font-size:12px}
+    .options{margin:8px 0 10px 4px;font-size:13px;color:var(--muted)}
+    .options div{margin:4px 0;padding:3px 0}
 
     details{margin:6px 0}
     details summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--primary-light);padding:6px 0;user-select:none}
     details summary:hover{color:var(--accent)}
 
+    .answer-box{background:rgba(0,184,148,.05);border:1px solid rgba(0,184,148,.12);border-radius:10px;padding:14px;margin:8px 0;font-size:13px;line-height:1.8}
+    .answer-box .a-label{font-size:10px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+    .answer-box strong{color:var(--cyan)}
+
+    .predict-box{background:rgba(253,121,168,.05);border:1px solid rgba(253,121,168,.12);border-radius:10px;padding:14px;margin:10px 0 16px;font-size:13px}
+    .predict-box .p-label{font-size:10px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+
+    .tip{background:rgba(253,203,110,.05);border:1px solid rgba(253,203,110,.12);border-radius:10px;padding:12px;margin:8px 0;font-size:12px;color:var(--yellow)}
+
+    .sub-heading{font-size:15px;font-weight:700;margin:20px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+
+    .tag{display:inline-block;padding:3px 10px;border-radius:8px;font-size:11px;font-weight:500;margin:2px 3px 2px 0;background:rgba(108,92,231,.1);color:var(--primary-light);border:1px solid rgba(108,92,231,.12)}
+    .tag-hot{background:rgba(253,121,168,.1);color:var(--accent);border-color:rgba(253,121,168,.12)}
+    .tag-green{background:rgba(0,184,148,.1);color:var(--cyan);border-color:rgba(0,184,148,.12)}
     .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
-    .tag{display:inline-block;padding:3px 10px;border-radius:8px;font-size:11px;font-weight:500;margin:2px 3px 2px 0;background:rgba(108,92,231,.1);color:var(--primary-light);border:1px solid rgba(108,92,231,.15)}
-    .tag-hot{background:rgba(253,121,168,.1);color:var(--accent);border-color:rgba(253,121,168,.15)}
-    .tag-green{background:rgba(0,184,148,.1);color:var(--cyan);border-color:rgba(0,184,148,.15)}
+
+    .dilr-set{background:rgba(162,155,254,.04);border:1px solid rgba(162,155,254,.12);border-radius:12px;padding:18px;margin-bottom:16px}
+    .dilr-set h4{font-size:14px;font-weight:700;margin-bottom:4px}
+    .dilr-set .set-meta{font-size:11px;color:var(--muted);margin-bottom:10px}
+    .dilr-set .scenario{font-size:13px;line-height:1.7}
 
     .footer{text-align:center;padding:40px 20px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);margin-top:40px}
-
-    .tip{background:rgba(253,203,110,.06);border:1px solid rgba(253,203,110,.15);border-radius:10px;padding:12px;margin:8px 0;font-size:12px;color:var(--yellow)}
-
     .back-link{display:inline-block;margin:20px;font-size:13px;color:var(--primary-light)}
 
-    @media(max-width:640px){.grid-2{grid-template-columns:1fr}.card{padding:16px}.subtype{padding:14px}}
+    @media(max-width:640px){.card{padding:16px}.pyq{padding:14px}.hero .stats{gap:10px}}
   </style>
 </head>
 <body>
 <div class="bg-pattern"></div>
-
 <a href="index.html" class="back-link">← Back to Main Dashboard</a>
 
 <header class="hero">
-  <h1>CAT 2026 <span>Predictions & Question Bank</span> 🔮</h1>
-  <p>Every question type, every sub-topic, with practice questions — predicted based on 25 years of pattern analysis. Made for Aditi ❤️</p>
+  <h1>CAT <span>PYQs & 2026 Predictions</span> 🔮</h1>
+  <p>Real CAT questions from 2017–2024, organized topic-wise with full solutions. Plus my predictions for what's coming in CAT 2026. Made for Aditi ❤️</p>
+  <div class="stats">
+    <div class="stat"><div class="n">50+</div><div class="l">Real CAT PYQs</div></div>
+    <div class="stat"><div class="n">8</div><div class="l">QA Topics</div></div>
+    <div class="stat"><div class="n">7</div><div class="l">DILR Sets</div></div>
+    <div class="stat"><div class="n">2017–24</div><div class="l">Years Covered</div></div>
+  </div>
 </header>
 
 <nav class="nav">
   <div class="nav-inner">
-    <button class="nav-btn active" onclick="showSec('predictions')">🔮 2026 Predictions</button>
+    <button class="nav-btn active" onclick="showSec('predictions')">🔮 Predictions</button>
     <button class="nav-btn" onclick="showSec('tsd')">🏃 TSD</button>
     <button class="nav-btn" onclick="showSec('pnl')">💰 P&L</button>
     <button class="nav-btn" onclick="showSec('tw')">⚙️ T&W</button>
@@ -101,7 +114,7 @@
     <button class="nav-btn" onclick="showSec('algebra')">📐 Algebra</button>
     <button class="nav-btn" onclick="showSec('geometry')">📏 Geometry</button>
     <button class="nav-btn" onclick="showSec('modern')">🎲 P&C/Prob</button>
-    <button class="nav-btn" onclick="showSec('arithmetic')">📊 Ratio/%/Avg</button>
+    <button class="nav-btn" onclick="showSec('arithmetic')">📊 %/Ratio/Avg</button>
     <button class="nav-btn" onclick="showSec('varc')">📖 VARC</button>
     <button class="nav-btn" onclick="showSec('dilr')">🧩 DILR</button>
   </div>
@@ -109,696 +122,708 @@
 
 <div class="container">
 
-<!-- ============ PREDICTIONS ============ -->
+<!-- ========== PREDICTIONS ========== -->
 <div id="sec-predictions" class="section active">
   <h2 class="section-title">🔮 CAT 2026 Predictions</h2>
-  <p class="section-sub">Based on pattern analysis of CAT 2000–2024 — here's what's most likely to appear</p>
+  <p class="section-sub">Based on pattern analysis of 25 years of CAT papers — here's what to expect</p>
 
-  <div class="card">
-    <div class="card-title">🔥 High Probability Topics (90%+ chance)</div>
-    <div class="card-sub">These appear EVERY year. Guarantee karo, Aditi.</div>
-    <div class="grid-2">
-      <div>
-        <h4 style="font-weight:700;color:var(--green);margin-bottom:8px;font-size:13px">🔢 QA — Almost Certain</h4>
-        <span class="tag tag-hot">TSD — Relative Speed / Races</span>
-        <span class="tag tag-hot">P&L — Successive Discounts</span>
-        <span class="tag tag-hot">Percentages — Successive Change</span>
-        <span class="tag tag-hot">Ratio & Proportion</span>
-        <span class="tag tag-hot">Mixtures & Alligation</span>
-        <span class="tag tag-hot">Linear Equations — Integer Solutions</span>
-        <span class="tag tag-hot">Quadratic — Max/Min problems</span>
-        <span class="tag tag-hot">Number of Factors</span>
-        <span class="tag tag-hot">Remainder Problems</span>
-        <span class="tag tag-hot">Triangles — Similar Triangles</span>
-        <span class="tag tag-hot">Circles — Tangent/Secant</span>
-      </div>
-      <div>
-        <h4 style="font-weight:700;color:var(--blue);margin-bottom:8px;font-size:13px">📖 VARC — Almost Certain</h4>
-        <span class="tag tag-hot">RC — Inference Questions</span>
-        <span class="tag tag-hot">RC — Author's Tone/Attitude</span>
-        <span class="tag tag-hot">RC — Main Idea</span>
-        <span class="tag tag-hot">Para Jumbles (4 sentences, TITA)</span>
-        <span class="tag tag-hot">Para Summary</span>
-        <span class="tag tag-hot">Odd Sentence Out</span>
-        <h4 style="font-weight:700;color:var(--primary-light);margin-bottom:8px;margin-top:12px;font-size:13px">📊 DILR — Almost Certain</h4>
-        <span class="tag tag-hot">Table-based DI</span>
-        <span class="tag tag-hot">Arrangement (Linear/Circular)</span>
-        <span class="tag tag-hot">Games & Tournaments</span>
-        <span class="tag tag-hot">Scheduling/Sequencing</span>
-      </div>
+  <div class="card" style="border-color:rgba(253,121,168,.25)">
+    <div style="font-size:15px;font-weight:700;margin-bottom:14px">🎯 Top 10 Specific Predictions for CAT 2026</div>
+    <div style="font-size:13.5px">
+      <div style="padding:10px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">1.</strong> <strong>Circular Race</strong> — 2-3 runners on a track, one opposite direction, find when all meet at starting point <em style="color:var(--muted);font-size:11px">(appeared CAT 2019, 2020, 2021)</em></div>
+      <div style="padding:10px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">2.</strong> <strong>P&L with wastage + revised markup</strong> — Buy bulk, sell in parts, some wasted, find final markup% <em style="color:var(--muted);font-size:11px">(appeared CAT 2020 Slot 3)</em></div>
+      <div style="padding:10px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">3.</strong> <strong>Remainder of N^N = 2^k type</strong> — Number theory with power equivalences <em style="color:var(--muted);font-size:11px">(appeared CAT 2018 Slot 2)</em></div>
+      <div style="padding:10px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">4.</strong> <strong>f(x) symmetry / functional equation</strong> — Find sum of roots given f(a+x)=f(a-x) <em style="color:var(--muted);font-size:11px">(appeared CAT 2020 Slot 1)</em></div>
+      <div style="padding:10px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">5.</strong> <strong>Triangle with centroid / circumradius</strong> — Area calculations using centroid properties <em style="color:var(--muted);font-size:11px">(appeared CAT 2017)</em></div>
+      <div style="padding:10px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">6.</strong> <strong>Pipes & Cisterns with complex schedule</strong> — Multiple pipes, one leaking, alternating pattern <em style="color:var(--muted);font-size:11px">(appeared CAT 2023 Slot 2)</em></div>
+      <div style="padding:10px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">7.</strong> <strong>Venn Diagram maxima/minima</strong> — 3-set, "at least 2 of 3", find max/min <em style="color:var(--muted);font-size:11px">(perennial favourite)</em></div>
+      <div style="padding:10px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">8.</strong> <strong>DILR: Tournament fixtures</strong> — Round-robin with partial results, deduce full table <em style="color:var(--muted);font-size:11px">(appeared 2018, 2019, 2022)</em></div>
+      <div style="padding:10px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">9.</strong> <strong>RC on AI/Tech Ethics + Climate Economics</strong> — Trending academic topics <em style="color:var(--muted);font-size:11px">(CAT 2024 had AI regulation)</em></div>
+      <div style="padding:10px 0"><strong style="color:var(--accent)">10.</strong> <strong>Simultaneous log equations</strong> — Multi-variable log solving with substitution <em style="color:var(--muted);font-size:11px">(appeared CAT 2019 Slot 1)</em></div>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-title">⚡ Rising Trends for 2026 (Watch Out!)</div>
-    <div class="card-sub">Topics that have been increasing in recent years</div>
+    <div style="font-size:15px;font-weight:700;margin-bottom:10px">📈 Rising Trends (Watch Out!)</div>
     <div class="grid-2">
       <div>
-        <h4 style="font-weight:600;font-size:13px;margin-bottom:8px">📈 QA Trends</h4>
-        <span class="tag tag-green">Geometry — Mensuration 3D (rising since 2020)</span>
-        <span class="tag tag-green">Functions — Composite & Piecewise (2022-24 trend)</span>
-        <span class="tag tag-green">Logs — Multi-step log equations</span>
-        <span class="tag tag-green">Inequalities with Modulus</span>
-        <span class="tag tag-green">Circular Races (appeared 2022, 2023)</span>
-        <span class="tag tag-green">Sequences — Pattern recognition</span>
+        <div style="font-weight:600;font-size:12px;color:var(--green);margin-bottom:8px">QA — Getting Harder Since 2020</div>
+        <span class="tag tag-hot">Functions — Composite, piecewise, symmetry</span>
+        <span class="tag tag-hot">3D Mensuration — Frustum, inscribed solids</span>
+        <span class="tag tag-hot">Logs — Multi-variable systems</span>
+        <span class="tag tag-hot">Modulus Inequalities</span>
+        <span class="tag tag-green">Circular Races — 3 runners</span>
+        <span class="tag tag-green">Diophantine equations (integer solutions)</span>
       </div>
       <div>
-        <h4 style="font-weight:600;font-size:13px;margin-bottom:8px">📈 VARC & DILR Trends</h4>
-        <span class="tag tag-green">RC — Science/Tech passages increasing</span>
-        <span class="tag tag-green">RC — 5-sentence Para Summary (new format)</span>
-        <span class="tag tag-green">DILR — Network/Route optimization sets</span>
-        <span class="tag tag-green">DILR — Multi-variable constraint puzzles</span>
-        <span class="tag tag-green">DILR — Conditional logic with binary (True/False)</span>
-        <span class="tag tag-green">VARC — Abstract philosophy RC passages</span>
+        <div style="font-weight:600;font-size:12px;color:var(--blue);margin-bottom:8px">VARC & DILR — Format Changes</div>
+        <span class="tag tag-hot">RC: Science/Tech/AI passages rising</span>
+        <span class="tag tag-hot">Sentence Insertion replacing some PJs</span>
+        <span class="tag tag-green">DILR: Prime factorization sets</span>
+        <span class="tag tag-green">DILR: Route optimization / networks</span>
+        <span class="tag tag-green">DILR: Scheduling with priority queues</span>
+        <span class="tag tag-green">DILR: Multi-round tournament scoring</span>
       </div>
-    </div>
-  </div>
-
-  <div class="card" style="border-color:rgba(253,121,168,.3)">
-    <div class="card-title">🎯 My Top 10 Specific Predictions for CAT 2026</div>
-    <div class="card-sub">If I had to bet on exactly what'll appear:</div>
-    <div style="font-size:14px">
-      <div style="padding:8px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">1.</strong> <strong>Circular Race problem</strong> — 2 or 3 people running on a circular track, meeting point/time calculation</div>
-      <div style="padding:8px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">2.</strong> <strong>Dishonest Dealer / Faulty Weights</strong> — Profit percentage when cheating on weights</div>
-      <div style="padding:8px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">3.</strong> <strong>Remainder when large number divided by prime</strong> — Fermat's Little Theorem type</div>
-      <div style="padding:8px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">4.</strong> <strong>Max/Min of a function with constraints</strong> — f(x) = ax² + bx + c type or AM-GM application</div>
-      <div style="padding:8px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">5.</strong> <strong>Triangle inscribed in a circle</strong> — Finding area using circumradius</div>
-      <div style="padding:8px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">6.</strong> <strong>Pipes & Cisterns with leak</strong> — Efficiency-based, alternating work pattern</div>
-      <div style="padding:8px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">7.</strong> <strong>3-set Venn Diagram with maxima/minima</strong> — "At least 2 of 3" type</div>
-      <div style="padding:8px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">8.</strong> <strong>RC passage on AI/Technology Ethics</strong> — Very current, CAT loves trending topics</div>
-      <div style="padding:8px 0;border-bottom:1px solid var(--border)"><strong style="color:var(--accent)">9.</strong> <strong>DILR — Tournament with knockouts + league format</strong> — Appeared 3 of last 5 years</div>
-      <div style="padding:8px 0"><strong style="color:var(--accent)">10.</strong> <strong>Mixtures & Alligation — Replacement type</strong> — "x litres removed and replaced" repeated</div>
     </div>
   </div>
 </div>
 
-<!-- ============ TSD ============ -->
+<!-- ========== TSD ========== -->
 <div id="sec-tsd" class="section">
   <div class="topic-header">
     <div class="topic-icon" style="background:rgba(0,184,148,.15)">🏃</div>
-    <div>
-      <div class="topic-name">Time, Speed & Distance</div>
-      <div class="topic-meta">Appears 92% of years • 2-3 questions per paper • Difficulty: Moderate to Hard</div>
-    </div>
+    <div><div class="topic-name">Time, Speed & Distance</div><div class="topic-meta">Appears 92% of years • 2-3 questions per paper</div></div>
   </div>
 
-  <!-- Type 1: Relative Speed -->
-  <div class="subtype">
-    <div class="subtype-header">
-      <span class="subtype-name">1. Relative Speed (Two people/objects moving)</span>
-      <span class="badge badge-hot">🔥 Very Likely 2026</span>
-    </div>
-    <p style="font-size:12px;color:var(--muted);margin-bottom:10px">When two objects move in same/opposite direction. Same direction: relative speed = difference. Opposite: relative speed = sum.</p>
+  <div class="sub-heading">Circular Races — CAT Favourite 🔥</div>
 
-    <div class="question-box">
-      <div class="q-label">Practice Question 1 — Same Direction Chase</div>
-      <div class="q-text">A starts from point P at 6 AM walking at 4 km/hr. B starts from the same point at 8 AM cycling at 12 km/hr in the same direction. At what time will B catch A?</div>
-    </div>
-    <details><summary>Show Answer & Approach</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      By 8 AM, A has covered 4 × 2 = 8 km. Relative speed = 12 − 4 = 8 km/hr. Time to catch up = 8/8 = 1 hour. <strong>B catches A at 9 AM</strong>, at a distance of 12 km from P.
-    </div></details>
-
-    <div class="question-box">
-      <div class="q-label">Practice Question 2 — Opposite Direction Meeting</div>
-      <div class="q-text">Two trains start from stations A and B, 300 km apart, at the same time towards each other. Train from A travels at 60 km/hr and train from B at 90 km/hr. At what distance from A will they meet?</div>
-    </div>
-    <details><summary>Show Answer</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      Combined speed = 60 + 90 = 150 km/hr. Time to meet = 300/150 = 2 hours. Distance from A = 60 × 2 = <strong>120 km</strong>. Ratio of distances = ratio of speeds = 60:90 = 2:3.
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Circular Track — Same & Opposite Direction</span><span><span class="year-badge">CAT 2021 Slot 3</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">Mira and Amal walk along a circular track, starting from the same point at the same time. If they walk in the same direction, then in 45 minutes, Amal completes exactly 3 more rounds than Mira. If they walk in opposite directions, then they meet for the first time exactly after 3 minutes. The number of rounds Mira walks in one hour is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 8</div>
+    Let time per round for Amal = <em>a</em> min, Mira = <em>m</em> min.<br>
+    <strong>Same direction:</strong> 45/a − 45/m = 3 → 1/a − 1/m = 1/15 ...(1)<br>
+    <strong>Opposite direction:</strong> 3/a + 3/m = 1 → 1/a + 1/m = 1/3 ...(2)<br>
+    From (2)−(1): 2/m = 1/3 − 1/15 = 4/15 → m = 7.5 min<br>
+    Rounds in 60 min = 60/7.5 = <strong>8</strong>
     </div></details>
   </div>
 
-  <!-- Type 2: Circular Races -->
-  <div class="subtype">
-    <div class="subtype-header">
-      <span class="subtype-name">2. Circular Races / Circular Track</span>
-      <span class="badge badge-hot">🔥 HIGH CHANCE 2026</span>
-    </div>
-    <p style="font-size:12px;color:var(--muted);margin-bottom:10px">People running on a circular track. First meeting = LCM concept. Same direction: time = circumference ÷ |speed difference|. Opposite: time = circumference ÷ (sum of speeds).</p>
-
-    <div class="question-box">
-      <div class="q-label">Practice Question 1 — Two Runners, Same Direction</div>
-      <div class="q-text">A and B start from the same point on a circular track of length 600 m. A runs at 5 m/s and B runs at 3 m/s in the same direction. After how many seconds will they meet for the first time at the starting point?</div>
-    </div>
-    <details><summary>Show Answer</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      Time for A to complete one round = 600/5 = 120s. Time for B = 600/3 = 200s. They meet at starting point = LCM(120, 200) = <strong>600 seconds = 10 minutes</strong>.<br><br>
-      First meeting anywhere on track = 600/(5−3) = 600/2 = <strong>300 seconds</strong>.
-    </div></details>
-
-    <div class="question-box">
-      <div class="q-label">Practice Question 2 — Three Runners</div>
-      <div class="q-text">Three runners A, B, and C start together from the same point on a circular track of 1200 m. Their speeds are 6 m/s, 4 m/s, and 3 m/s respectively, all running in the same direction. When will all three meet for the first time?</div>
-    </div>
-    <details><summary>Show Answer</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      A-B meet every 1200/(6−4) = 600s. A-C meet every 1200/(6−3) = 400s. All three meet = LCM(600, 400) = <strong>1200 seconds = 20 minutes</strong>.
-    </div></details>
-
-    <div class="question-box">
-      <div class="q-label">Practice Question 3 — Opposite Directions</div>
-      <div class="q-text">A and B run on a circular track of 400 m in opposite directions at 8 m/s and 6 m/s. How many times do they meet in 10 minutes?</div>
-    </div>
-    <details><summary>Show Answer</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      First meeting time = 400/(8+6) = 400/14 ≈ 28.57s. In 600s, meetings = floor(600/28.57) = <strong>21 times</strong>.
-    </div></details>
-
-    <div class="predict-box">
-      <div class="p-label">🔮 2026 Prediction</div>
-      Expect a 3-runner circular race problem where you need to find when all three meet at the starting point, with one runner going in the opposite direction.
-    </div>
-  </div>
-
-  <!-- Type 3: Trains -->
-  <div class="subtype">
-    <div class="subtype-header">
-      <span class="subtype-name">3. Trains (Crossing poles, platforms, other trains)</span>
-      <span class="badge badge-likely">⚡ Likely</span>
-    </div>
-
-    <div class="question-box">
-      <div class="q-label">Practice Question 1 — Train crosses platform</div>
-      <div class="q-text">A train 200 m long crosses a platform 300 m long in 25 seconds. What is the speed of the train in km/hr?</div>
-    </div>
-    <details><summary>Show Answer</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      Total distance = 200 + 300 = 500 m. Speed = 500/25 = 20 m/s = 20 × 18/5 = <strong>72 km/hr</strong>.
-    </div></details>
-
-    <div class="question-box">
-      <div class="q-label">Practice Question 2 — Two trains crossing</div>
-      <div class="q-text">Two trains of lengths 150 m and 250 m are running in opposite directions at 40 km/hr and 50 km/hr. How long will they take to completely cross each other?</div>
-    </div>
-    <details><summary>Show Answer</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      Total distance = 150 + 250 = 400 m. Relative speed = 40 + 50 = 90 km/hr = 25 m/s. Time = 400/25 = <strong>16 seconds</strong>.
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Circular Track — Meeting at Starting Point (LCM)</span><span><span class="year-badge">CAT 2020 Slot 3</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">Anil, Sunil, and Ravi run along a circular path of length 3 km, starting from the same point at the same time, and in the same direction. If their speeds are 15 km/h, 10 km/h, and 8 km/h, respectively, how much distance (in km) will Ravi have run when Anil and Sunil meet again for the first time at the starting point? <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 4.8 km</div>
+    Anil's lap time = 3/15 = 1/5 hr = 12 min. Sunil's lap time = 3/10 hr = 18 min.<br>
+    Meet at start = LCM(12, 18) = 36 min = 3/5 hr.<br>
+    Ravi's distance = 8 × 3/5 = <strong>4.8 km</strong>
     </div></details>
   </div>
 
-  <!-- Type 4: Boats & Streams -->
-  <div class="subtype">
-    <div class="subtype-header">
-      <span class="subtype-name">4. Boats & Streams</span>
-      <span class="badge badge-likely">⚡ Likely</span>
-    </div>
-    <p style="font-size:12px;color:var(--muted);margin-bottom:10px">Downstream = boat + stream. Upstream = boat − stream.</p>
-
-    <div class="question-box">
-      <div class="q-label">Practice Question</div>
-      <div class="q-text">A boat takes 6 hours to go from A to B downstream and 10 hours to return. If the speed of the stream is 3 km/hr, find the distance between A and B.</div>
-    </div>
-    <details><summary>Show Answer</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      Let boat speed = b. Downstream: d = (b+3)×6. Upstream: d = (b−3)×10. So 6(b+3) = 10(b−3) → 6b+18 = 10b−30 → 4b = 48 → b = 12. Distance = (12+3)×6 = <strong>90 km</strong>.
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Circular Track — Opposite Directions & Clock Reasoning</span><span><span class="year-badge">CAT 2019 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">Two ants A and B start from a point P on a circle at the same time, with A moving clock-wise and B moving anti-clockwise. They meet for the first time at 10:00 am when A has covered 60% of the track. If A returns to P at 10:12 am, then B returns to P at:
+    <div class="options"><div>A) 10:27 am</div><div>B) 10:25 am</div><div>C) 10:45 am</div><div>D) 10:18 am</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: A) 10:27 am</div>
+    At 10:00 AM: A covered 60%, B covered 40%. Speed ratio = 3:2 → Time ratio = 2:3.<br>
+    A's remaining 40% takes 12 min → full lap = 12/0.4 = 30 min. So A started at 30−12 = 18 min before 10:00 = <strong>9:42 AM</strong>.<br>
+    B's full lap = 30 × 3/2 = 45 min. B returns to P = 9:42 + 45 = <strong>10:27 AM</strong>
     </div></details>
   </div>
 
-  <!-- Type 5: Average Speed -->
-  <div class="subtype">
-    <div class="subtype-header">
-      <span class="subtype-name">5. Average Speed (Different speeds for different legs)</span>
-      <span class="badge badge-hot">🔥 Very Likely</span>
-    </div>
+  <div class="sub-heading">Relative Speed & Boats</div>
 
-    <div class="question-box">
-      <div class="q-label">Practice Question — Classic CAT Type</div>
-      <div class="q-text">A person travels from A to B at 40 km/hr and returns at 60 km/hr. What is the average speed for the entire journey?</div>
-    </div>
-    <details><summary>Show Answer</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      For same distance at different speeds: Average speed = 2ab/(a+b) = 2×40×60/(40+60) = 4800/100 = <strong>48 km/hr</strong>. (NOT 50 — harmonic mean, not arithmetic mean!)
-    </div></details>
-
-    <div class="question-box">
-      <div class="q-label">Practice Question — Three Speeds (Advanced)</div>
-      <div class="q-text">A man travels equal distances at 3 km/hr, 4 km/hr, and 5 km/hr. Find his average speed for the entire journey.</div>
-    </div>
-    <details><summary>Show Answer</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      Average speed = 3/(1/3 + 1/4 + 1/5) = 3/((20+15+12)/60) = 3/(47/60) = 180/47 ≈ <strong>3.83 km/hr</strong>.
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Relative Speed — Three Bodies Same Time Meeting</span><span><span class="year-badge">CAT 2023 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">Ravi is driving at a speed of 40 km/h on a road. Vijay is 54 meters behind Ravi and driving in the same direction. Ashok is driving from the opposite direction at 50 km/h and is 225 meters from Ravi. The speed, in km/h, at which Vijay should drive so that all three cross each other at the same time is:
+    <div class="options"><div>A) 58.8</div><div>B) 67.2</div><div>C) 61.6</div><div>D) 64.4</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: C) 61.6 km/h</div>
+    Ravi-Ashok relative speed = 40+50 = 90 km/h = 25 m/s. Time to meet = 225/25 = <strong>9 seconds</strong>.<br>
+    Ravi travels 40 × 5/18 × 9 = 100 m in 9s. Meeting point is 100m ahead of Ravi.<br>
+    Vijay must cover 54 + 100 = 154 m in 9s → Speed = 154/9 × 18/5 = <strong>61.6 km/h</strong>
     </div></details>
   </div>
 
-  <!-- Type 6: Races -->
-  <div class="subtype">
-    <div class="subtype-header">
-      <span class="subtype-name">6. Races (Head start, dead heat)</span>
-      <span class="badge badge-likely">⚡ Likely</span>
-    </div>
-
-    <div class="question-box">
-      <div class="q-label">Practice Question</div>
-      <div class="q-text">In a 1000 m race, A beats B by 100 m and B beats C by 150 m. By how much does A beat C in the same race?</div>
-    </div>
-    <details><summary>Show Answer</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      When A finishes 1000, B is at 900. When B finishes 1000, C is at 850 → ratio B:C = 1000:850. When B is at 900, C is at 900 × 850/1000 = 765. A beats C by 1000 − 765 = <strong>235 m</strong>.
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Boats & Streams — Speed Doubling</span><span><span class="year-badge">CAT 2017 Slot 1</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">A man travels by a motor boat down a river to his office and back. With the speed of the river unchanged, if he doubles the speed of his motor boat, then his total travel time gets reduced by 75%. The ratio of the original speed of the motor boat to the speed of the river is:
+    <div class="options"><div>A) √6 : √2</div><div>B) √7 : 2</div><div>C) 2√5 : 3</div><div>D) 3 : 2</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: B) √7 : 2</div>
+    T₁ = 2Db/(b²−s²). T₂ = 4Db/(4b²−s²). Given T₂ = T₁/4:<br>
+    4/(4b²−s²) = 1/[2(b²−s²)] → 8(b²−s²) = 4b²−s² → 4b² = 7s²<br>
+    <strong>b/s = √7/2</strong>
     </div></details>
   </div>
 
-  <!-- Type 7: Clocks -->
-  <div class="subtype">
-    <div class="subtype-header">
-      <span class="subtype-name">7. Clocks (Angle between hands, meetings)</span>
-      <span class="badge badge-possible">📌 Possible</span>
-    </div>
-
-    <div class="question-box">
-      <div class="q-label">Practice Question</div>
-      <div class="q-text">At what time between 4 and 5 o'clock will the minute and hour hands be at right angles?</div>
-    </div>
-    <details><summary>Show Answer</summary>
-    <div class="answer-box">
-      <div class="a-label">Solution</div>
-      At 4:00, angle = 120°. Minute hand gains 5.5° per minute over hour hand. For 90°: 120 − 5.5t = 90 → t = 30/5.5 = 60/11 ≈ <strong>5 5/11 minutes past 4</strong>. Second time: 120 − 5.5t = −90 → t = 210/5.5 = 420/11 ≈ <strong>38 2/11 minutes past 4</strong>.
-    </div></details>
-  </div>
+  <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>Expect a 3-runner circular race (one going opposite) OR a relative speed problem with 3 moving objects meeting simultaneously. Both patterns have appeared 3 of last 5 years.</div>
 </div>
 
-<!-- ============ PROFIT & LOSS ============ -->
+<!-- ========== P&L ========== -->
 <div id="sec-pnl" class="section">
   <div class="topic-header">
     <div class="topic-icon" style="background:rgba(253,203,110,.15)">💰</div>
-    <div>
-      <div class="topic-name">Profit & Loss</div>
-      <div class="topic-meta">Appears 96% of years • 2-3 questions per paper • Difficulty: Easy to Moderate</div>
-    </div>
+    <div><div class="topic-name">Profit & Loss</div><div class="topic-meta">Appears 96% of years • 2-3 questions • Easiest to score</div></div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">1. Successive Discounts</span><span class="badge badge-hot">🔥 Very Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">A shopkeeper marks up the price of an item by 50% and then offers two successive discounts of 20% and 10%. What is the net profit or loss percentage?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Let CP = 100. MP = 150. After 20% discount = 150 × 0.8 = 120. After 10% discount = 120 × 0.9 = 108. Profit = 8%. <strong>Net profit = 8%</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Alligation on Two Purchases</span><span><span class="year-badge">CAT 2020 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">A person spent Rs 50000 to purchase a desktop computer and a laptop computer. He sold the desktop at 20% profit and the laptop at 10% loss. If overall he made a 2% profit, then the purchase price, in rupees, of the desktop is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 20,000</div>
+    D + L = 50000. 0.20D − 0.10L = 1000 → 2D − L = 10000.<br>
+    Adding: 3D = 60000 → <strong>D = 20,000</strong>.<br>
+    <em>Alligation shortcut: (+20%) and (−10%) give (+2%). Ratio = (2−(−10)):(20−2) = 12:18 = 2:3. Desktop = 2/5 × 50000 = 20000.</em>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">2. Dishonest Dealer / Faulty Weights</span><span class="badge badge-hot">🔥 HIGH CHANCE 2026</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">A shopkeeper claims to sell at cost price but uses a weight of 900 gm instead of 1 kg. What is his profit percentage?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Profit% = (Error/True value − Error) × 100 = (100/900) × 100 = <strong>11.11%</strong>.</div></details>
-
-    <div class="question-box"><div class="q-label">Practice — Combined Cheating</div><div class="q-text">A dealer cheats while buying (uses 1100 gm weight) and while selling (uses 900 gm weight). If he claims to sell at cost price, find his profit %.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>He buys 1100 gm for price of 1000 gm and sells 900 gm for price of 1000 gm. Profit% = (1100/900 − 1) × 100 = (200/900) × 100 = <strong>22.22%</strong>.</div></details>
-
-    <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>A dishonest dealer problem combined with markup/discount is very likely. "Marks up by x%, gives y% discount, and uses z gm weight — find actual profit%."</div>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Markup, Discount, Wastage — Complex Scenario</span><span><span class="year-badge">CAT 2020 Slot 3</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">A man buys 35 kg of sugar and sets a marked price in order to make a 20% profit. He sells 5 kg at this price, and 15 kg at a 10% discount. Accidentally, 3 kg of sugar is wasted. He sells the remaining sugar by raising the marked price by p percent so as to make an overall profit of 15%. Then p is nearest to:
+    <div class="options"><div>A) 35</div><div>B) 31</div><div>C) 22</div><div>D) 25</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: D) 25</div>
+    Let CP = ₹10/kg. Total CP = 350. Target 15% profit → Total SP = 402.50. MP = ₹12/kg.<br>
+    Revenue: 5kg × 12 = 60. 15kg × 10.8 = 162. 3kg wasted = 0. Remaining = 12 kg.<br>
+    Need from 12kg: 402.50 − 222 = 180.50 → SP/kg = 15.04.<br>
+    Increase over MP of 12: (15.04−12)/12 × 100 ≈ <strong>25%</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">3. Partnership (Profit Sharing)</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">A starts a business with ₹40,000. After 3 months, B joins with ₹60,000. At the end of the year, total profit is ₹28,000. Find B's share.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>A's investment ratio = 40,000 × 12 = 4,80,000. B's = 60,000 × 9 = 5,40,000. Ratio = 48:54 = 8:9. B's share = (9/17) × 28,000 = <strong>₹14,824</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Pen + Book — Simultaneous CP Equations</span><span><span class="year-badge">CAT 2019 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">A shopkeeper sells a pen and a book. If he sells the pen at a 5% loss and the book at a 15% gain, he gains Rs. 7. If he sells the pen at a 5% gain and the book at a 10% gain, he gains Rs. 13. What is the cost price (in Rs.) of the book? <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 80</div>
+    −0.05P + 0.15B = 7 ...(1)<br>
+    +0.05P + 0.10B = 13 ...(2)<br>
+    Adding: 0.25B = 20 → <strong>B = 80</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">4. CP-SP with Tax / Multiple Items</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice — CAT Style</div><div class="q-text">A man buys 5 oranges for ₹3 and sells 3 oranges for ₹5. What is his profit percentage?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>CP of 1 orange = 3/5 = ₹0.60. SP of 1 orange = 5/3 = ₹1.67. Profit% = (1.67 − 0.60)/0.60 × 100 = <strong>177.78%</strong>. Shortcut: Profit% = (5×5 − 3×3)/(3×3) × 100 = (25−9)/9 × 100 = 177.78%.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Fixed Wage + Variable SP</span><span><span class="year-badge">CAT 2021 Slot 1</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">Amal purchases some pens at ₹8 each. To sell these, he hires an employee at a fixed wage. He sells 100 of these pens at ₹12 each. If the remaining pens are sold at ₹11 each, then he makes a net profit of ₹300, while he makes a net loss of ₹300 if the remaining pens are sold at ₹9 each. The wage of the employee, in INR, is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 1,000</div>
+    SP difference per remaining pen = 11−9 = ₹2. Profit swing = 300−(−300) = ₹600.<br>
+    Remaining pens = 600/2 = 300. Total pens = 400. Total CP = 400×8 = 3200.<br>
+    Case 1 SP = 100×12 + 300×11 = 4500. Profit: 4500 − 3200 − W = 300 → <strong>W = 1000</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">5. Break-Even / No Profit No Loss</span><span class="badge badge-possible">📌 Possible</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">A trader buys 80 kg of rice at ₹40/kg. He sells 60 kg at ₹50/kg. At what price should he sell the remaining 20 kg to make a 25% overall profit?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Total CP = 80 × 40 = ₹3200. Target SP = 3200 × 1.25 = ₹4000. From 60 kg = 60 × 50 = ₹3000. Remaining needed = 4000 − 3000 = ₹1000 from 20 kg. Price = 1000/20 = <strong>₹50/kg</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Mixtures with Profit Target</span><span><span class="year-badge">CAT 2022 Slot 1</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">Amal buys 110 kg of syrup and 120 kg of juice, syrup being 20% less costly per kg than juice. He sells 10 kg of syrup at 10% profit and 20 kg of juice at 20% profit. Mixing the remaining juice and syrup, he sells the mixture at ₹308.32 per kg and makes an overall profit of 64%. The cost price, in ₹, of a kg of syrup is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 160</div>
+    Let juice CP = 5x/kg, syrup CP = 4x/kg. Total CP = 110(4x)+120(5x) = 1040x.<br>
+    Total SP at 64% profit = 1705.6x. Revenue: 10×4.4x + 20×6x + 200×308.32 = 1705.6x<br>
+    44x + 120x + 61664 = 1705.6x → 1541.6x = 61664 → x = 40.<br>
+    Syrup CP = 4×40 = <strong>₹160</strong>
+    </div></details>
   </div>
+
+  <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>P&L with wastage/fixed costs + variable selling prices is the hot pattern. Also expect a "buy in bulk, sell in parts at different prices/discounts" problem.</div>
 </div>
 
-<!-- ============ TIME & WORK ============ -->
+<!-- ========== TIME & WORK ========== -->
 <div id="sec-tw" class="section">
   <div class="topic-header">
     <div class="topic-icon" style="background:rgba(116,185,255,.15)">⚙️</div>
-    <div>
-      <div class="topic-name">Time & Work</div>
-      <div class="topic-meta">Appears 88% of years • 1-2 questions per paper • Difficulty: Moderate</div>
-    </div>
+    <div><div class="topic-name">Time & Work</div><div class="topic-meta">Appears 88% of years • 1-2 questions</div></div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">1. Basic Efficiency — Two/Three Workers</span><span class="badge badge-hot">🔥 Very Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">A can do a piece of work in 12 days and B can do it in 18 days. They work together for 4 days, then A leaves. How many more days will B take to finish the remaining work?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>LCM(12,18) = 36 units. A's rate = 3 units/day, B's rate = 2 units/day. Together in 4 days = (3+2)×4 = 20 units. Remaining = 36−20 = 16 units. B alone = 16/2 = <strong>8 days</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Alternate Days — Three Workers</span><span><span class="year-badge">CAT 2021 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">Anu, Vinu and Manu can complete a work alone in 15 days, 12 days and 20 days, respectively. Vinu works everyday. Anu works only on alternate days starting from the first day, while Manu works only on alternate days starting from the second day. Then, the number of days needed to complete the work is:
+    <div class="options"><div>A) 5</div><div>B) 8</div><div>C) 6</div><div>D) 7</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: D) 7 days</div>
+    Total work = LCM(15,12,20) = 60 units. Anu=4/day, Vinu=5/day, Manu=3/day.<br>
+    Day 1 (Anu+Vinu): 9 | Day 2 (Manu+Vinu): 8 | 2-day cycle = 17 units.<br>
+    3 cycles (6 days) = 51 units. Remaining = 9. Day 7: Anu+Vinu = 9 ✓ → <strong>7 days</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">2. Pipes & Cisterns (with Leak)</span><span class="badge badge-hot">🔥 HIGH CHANCE 2026</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">Pipe A fills a tank in 12 hours, Pipe B fills it in 15 hours, and Pipe C empties it in 20 hours. If all three are opened together, in how many hours will the tank be full?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>LCM(12,15,20) = 60 litres. A fills 5 l/hr, B fills 4 l/hr, C empties 3 l/hr. Net = 5+4−3 = 6 l/hr. Time = 60/6 = <strong>10 hours</strong>.</div></details>
-
-    <div class="question-box"><div class="q-label">Practice — Tank with Unknown Leak</div><div class="q-text">A pipe fills a tank in 8 hours. Due to a leak, it takes 10 hours. If the tank is full, how long will the leak take to empty it?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Pipe rate = 1/8. Net rate = 1/10. Leak rate = 1/8 − 1/10 = (5−4)/40 = 1/40. Leak empties tank in <strong>40 hours</strong>.</div></details>
-
-    <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>Pipes & Cisterns with alternating opening pattern (Pipe A open for 1 hr, then B for 1 hr, then C closes — cycle repeats) is a hot CAT question type.</div>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Relative Efficiency — John, Jack, Jim</span><span><span class="year-badge">CAT 2020 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">John takes twice as much time as Jack to finish a job. Jack and Jim together take one-thirds of the time to finish the job than John takes working alone. Moreover, in order to finish the job, John takes three days more than that taken by three of them working together. In how many days will Jim finish the job working alone? <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 4 days</div>
+    R_Jack = 2·R_John. Jack+Jim rate = 3·R_John → R_Jim = R_John.<br>
+    All three: 4·R_John → T_all = T_John/4.<br>
+    T_John = T_John/4 + 3 → ¾·T_John = 3 → T_John = 4.<br>
+    Since R_Jim = R_John → <strong>Jim takes 4 days</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">3. Alternate Days / Cyclic Work</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">A can do a work in 10 days, B in 12 days. They work on alternate days, starting with A. In how many days will the work be completed?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>LCM(10,12) = 60 units. A = 6 units/day, B = 5 units/day. Per 2-day cycle = 6+5 = 11 units. After 10 days (5 cycles) = 55 units done. Day 11: A works, does 6 units but only 5 needed. A finishes in 5/6 day. Total = <strong>10 + 5/6 = 10⅚ days</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Staggered Joining + 10% Work Share</span><span><span class="year-badge">CAT 2019 Slot 2</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">Anil alone can do a job in 20 days while Sunil alone can do it in 40 days. Anil starts the job, and after 3 days, Sunil joins him. Again, after a few more days, Bimal joins them and they together finish the job. If Bimal has done 10% of the job, then in how many days was the job done?
+    <div class="options"><div>A) 13</div><div>B) 12</div><div>C) 15</div><div>D) 14</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: A) 13 days</div>
+    Work = 40 units. Anil = 2/day, Sunil = 1/day. Bimal did 10% = 4 units.<br>
+    Anil alone for 3 days = 6. Remaining for Anil+Sunil = 40−4−6 = 30 units at 3/day = 10 days.<br>
+    Total = 3 + 10 = <strong>13 days</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">4. Wages Based on Work</span><span class="badge badge-possible">📌 Possible</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">A and B together complete a job in 12 days for a total wage of ₹3600. A alone can do it in 20 days. Find A's wage.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>A's rate = 1/20. Combined rate = 1/12. B's rate = 1/12 − 1/20 = 2/60 = 1/30. Work ratio A:B = (1/20):(1/30) = 3:2. A's wage = (3/5) × 3600 = <strong>₹2160</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Pipes & Cisterns — Complex System</span><span><span class="year-badge">CAT 2023 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">Pipes A and C are fill pipes while Pipe B is a drain pipe. Time taken by B to empty the full reservoir is 1 hour less than the time taken by A to fill it. When all three are turned on, the reservoir fills in 2 hours. If only B and C are turned on, and B is turned off after 1 hour, then C takes another 1 hour 15 minutes to fill it. The time taken, in minutes, by Pipe C alone to fill the reservoir is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 90 minutes</div>
+    All three: a − b + c = 1/2. B+C for 1hr then C for 5/4 hr: (c−b) + 5c/4 = 1 → 9c/4 − b = 1.<br>
+    B empties 1 hr less than A fills: 1/b = 1/a − 1.<br>
+    Solving the system: c = 2/3 → C alone = 1/(2/3) = 3/2 hr = <strong>90 minutes</strong>
+    </div></details>
+  </div>
+
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Man-Days — Additional Workers</span><span><span class="year-badge">CAT 2020 Slot 3</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">A contractor agreed to construct a 6 km road in 200 days. He employed 140 persons. After 60 days, only 1.5 km was completed. How many additional people would he need to finish on time? <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 40</div>
+    140 × 60 days → 1.5 km. Remaining: 4.5 km in 140 days.<br>
+    M₂ × 140 / 4.5 = 140 × 60 / 1.5 → M₂ = 180. Additional = 180 − 140 = <strong>40</strong>
+    </div></details>
   </div>
 </div>
 
-<!-- ============ NUMBER SYSTEM ============ -->
+<!-- ========== NUMBERS ========== -->
 <div id="sec-numbers" class="section">
   <div class="topic-header">
     <div class="topic-icon" style="background:rgba(162,155,254,.15)">🔢</div>
-    <div>
-      <div class="topic-name">Number System</div>
-      <div class="topic-meta">Appears 92% of years • 2-4 questions • Difficulty: Hard (Conceptual)</div>
-    </div>
+    <div><div class="topic-name">Number System</div><div class="topic-meta">Appears 92% of years • 2-4 questions • Conceptually hardest</div></div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">1. Remainders (Fermat, Wilson, Pattern)</span><span class="badge badge-hot">🔥 HIGH CHANCE 2026</span></div>
-    <div class="question-box"><div class="q-label">Practice — Power Remainder</div><div class="q-text">What is the remainder when 2^256 is divided by 17?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>By Fermat's Little Theorem: 2^16 ≡ 1 (mod 17). 256 = 16 × 16. So 2^256 = (2^16)^16 ≡ 1^16 ≡ <strong>1</strong> (mod 17).</div></details>
-
-    <div class="question-box"><div class="q-label">Practice — Successive Division</div><div class="q-text">What is the remainder when 7^7^7 is divided by 5?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>7 mod 5 = 2. So find 2^(7^7) mod 5. Cycle of 2's powers mod 5: 2,4,3,1 (period 4). Need 7^7 mod 4 = 3^7 mod 4 = 3 (since 3 mod 4 cycles as 3,1,3,1...). So 2^3 mod 5 = 8 mod 5 = <strong>3</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Digit Reversal — Three-digit Numbers</span><span><span class="year-badge">CAT 2017 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">How many three-digit numbers are greater than 100 and increase by 198 when the three digits are arranged in the reverse order? <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 70</div>
+    N = 100a+10b+c, N' = 100c+10b+a. N'−N = 99(c−a) = 198 → c−a = 2.<br>
+    Valid (a,c): (1,3),(2,4),(3,5),(4,6),(5,7),(6,8),(7,9) = 7 pairs. b can be 0-9 = 10 choices.<br>
+    Total = 7 × 10 = <strong>70</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">2. Number of Factors & Divisors</span><span class="badge badge-hot">🔥 Very Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">How many factors of 2^4 × 3^3 × 5^2 are multiples of 12?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>12 = 2² × 3¹. Factor must have at least 2² and 3¹. Choices: power of 2: {2,3,4} = 3 choices. Power of 3: {1,2,3} = 3 choices. Power of 5: {0,1,2} = 3 choices. Total = 3 × 3 × 3 = <strong>27</strong>.</div></details>
-
-    <div class="question-box"><div class="q-label">Practice — Odd Factors</div><div class="q-text">How many odd factors does 360 have?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>360 = 2³ × 3² × 5¹. For odd factors, power of 2 must be 0. Odd factors = (2+1)(1+1) = <strong>6</strong>. They are: 1, 3, 5, 9, 15, 45.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Perfect Square Factors</span><span><span class="year-badge">CAT 2019 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">How many factors of 2⁴ × 3⁵ × 10⁴ are perfect squares which are greater than 1? <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 44</div>
+    N = 2⁴ × 3⁵ × 2⁴ × 5⁴ = 2⁸ × 3⁵ × 5⁴.<br>
+    Perfect square factor: even powers only. 2: {0,2,4,6,8}=5. 3: {0,2,4}=3. 5: {0,2,4}=3.<br>
+    Total = 5×3×3 = 45. Excluding 1: <strong>44</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">3. Last Digit / Last Two Digits</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">What is the unit digit of 7^2024?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Cycle of 7: 7, 9, 3, 1 (period 4). 2024 mod 4 = 0. When remainder is 0, take the last in cycle. Unit digit = <strong>1</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Power Equivalence — N^N = 2^160</span><span><span class="year-badge">CAT 2018 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">If N and x are positive integers such that N^N = 2^160 and N² + 2^N is an integral multiple of 2^x, then the largest possible x is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 10</div>
+    N^N = 2^160 = 32^32 → N = 32 = 2⁵.<br>
+    N² + 2^N = 2¹⁰ + 2³² = 2¹⁰(1 + 2²²). Since (1+2²²) is odd, highest power of 2 = <strong>10</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">4. HCF & LCM Applications</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice — Classic CAT Type</div><div class="q-text">The LCM of two numbers is 1260 and their HCF is 12. If one number is 84, find the other.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>LCM × HCF = Product of numbers. 1260 × 12 = 84 × x. x = 15120/84 = <strong>180</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Digit Product Range</span><span><span class="year-badge">CAT 2020 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">How many 3-digit numbers are there, for which the product of their digits is more than 2 but at most 7? <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 24</div>
+    Products 3-7. Enumerate: {1,1,3}→3; {1,1,4}→3; {1,2,2}→3; {1,1,5}→3; {1,1,6}→3; {1,2,3}→6; {1,1,7}→3.<br>
+    Total = 3+3+3+3+3+6+3 = <strong>24</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">5. Highest Power in n!</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">What is the highest power of 12 that divides 50! ?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>12 = 2² × 3. Power of 2 in 50! = 25+12+6+3+1 = 47. Power of 3 in 50! = 16+5+1 = 22. For 12 = 2²×3: powers available = floor(47/2) = 23 for 2², and 22 for 3. Answer = min(23, 22) = <strong>22</strong>.</div></details>
-  </div>
-
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">6. Base System & Digital Sum</span><span class="badge badge-possible">📌 Possible</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">Convert (234)₅ to base 10.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>2×5² + 3×5¹ + 4×5⁰ = 50 + 15 + 4 = <strong>69</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">LCM + Remainder + Divisibility</span><span><span class="year-badge">CAT 2022 Slot 3</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">A school has less than 5000 students. If divided equally into teams of 9, 10, 12, or 25, exactly 4 are left out. If divided into teams of 11, no one is left out. The maximum number of teams of 12 each that can be formed is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 150</div>
+    LCM(9,10,12,25) = 900. N = 900k + 4 < 5000. Also N ≡ 0 (mod 11).<br>
+    k=1: 904÷11=82.18 ✗ | k=2: 1804÷11=164 ✓ | k=3,4,5: ✗<br>
+    N = 1804. Teams of 12 = ⌊1804/12⌋ = <strong>150</strong>
+    </div></details>
   </div>
 </div>
 
-<!-- ============ ALGEBRA ============ -->
+<!-- ========== ALGEBRA ========== -->
 <div id="sec-algebra" class="section">
   <div class="topic-header">
     <div class="topic-icon" style="background:rgba(253,121,168,.15)">📐</div>
-    <div>
-      <div class="topic-name">Algebra</div>
-      <div class="topic-meta">Appears 88% of years • 4-6 questions • Difficulty: Moderate to Hard</div>
-    </div>
+    <div><div class="topic-name">Algebra</div><div class="topic-meta">Appears 88% of years • 4-6 questions • Highest weightage in QA</div></div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">1. Linear Equations — Integer/Natural Number Solutions</span><span class="badge badge-hot">🔥 Very Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">How many positive integer solutions exist for 3x + 5y = 100?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>y = (100 − 3x)/5. For y to be positive integer: 100 − 3x must be divisible by 5 and positive. 3x ≡ 0 (mod 5), so x must be multiple of 5. x = 5,10,15,20,25,30. Check y > 0: x=30 → y=2 ✓, x=35 → y negative ✗. Solutions: x = 5,10,15,20,25,30 → <strong>6 solutions</strong>.</div></details>
-
-    <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>"Number of non-negative integer solutions of ax + by + cz = n" type is a CAT favourite. Master the stars-and-bars + constraint approach.</div>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Diophantine — Integer Solutions with Constraints</span><span><span class="year-badge">CAT 2020 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">The number of pairs of integers (x, y) satisfying x ≥ y ≥ −20 and 2x + 5y = 99 is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 17</div>
+    Base solution: x=2, y=19. General: x = 2+5k, y = 19−2k.<br>
+    x ≥ y → 2+5k ≥ 19−2k → k ≥ 3. y ≥ −20 → 19−2k ≥ −20 → k ≤ 19.<br>
+    k ∈ [3, 19] → <strong>17 pairs</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">2. Quadratic Equations — Max/Min Problems</span><span class="badge badge-hot">🔥 Very Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">If x + y = 10, what is the maximum value of xy?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>By AM-GM: xy is maximum when x = y = 5. Max xy = 25. Alternatively: xy = x(10−x) = −x² + 10x. Max at x = −b/2a = 10/2 = 5. Max value = <strong>25</strong>.</div></details>
-
-    <div class="question-box"><div class="q-label">Practice — CAT Style</div><div class="q-text">What is the minimum value of x² + y² + z² if x + y + z = 12 and x, y, z are positive reals?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>By Cauchy-Schwarz or by symmetry: minimum when x = y = z = 4. Min = 16 + 16 + 16 = <strong>48</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Quadratic Min — f(x) ≥ 0 with Discriminant</span><span><span class="year-badge">CAT 2020 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">Let f(x) = x² + ax + b and g(x) = f(x+1) − f(x−1). If f(x) ≥ 0 for all real x, and g(20) = 72, then the smallest possible value of b is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 4</div>
+    g(x) = 4x + 2a. g(20) = 80+2a = 72 → a = −4.<br>
+    f(x) = x²−4x+b ≥ 0 ∀x → discriminant ≤ 0: 16−4b ≤ 0 → b ≥ 4.<br>
+    Smallest b = <strong>4</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">3. Inequalities (Modulus-based)</span><span class="badge badge-hot">🔥 Rising Trend</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">Find the number of integer solutions of |x − 3| + |x + 5| < 12.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Critical points: x = 3, x = −5. Distance between them = 8 < 12, so solutions exist. For x > 3: (x−3)+(x+5) < 12 → 2x+2 < 12 → x < 5. For x < −5: (3−x)+(−x−5) < 12 → −2x−2 < 12 → x > −7. For −5 ≤ x ≤ 3: 8 < 12 (always true). Combined: −7 < x < 5. Integer solutions: −6,−5,...,4 → <strong>11 solutions</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Rational Inequality — Wavy Curve</span><span><span class="year-badge">CAT 2021 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">f(x) = (x²+2x−15)/(x²−7x−18) is negative if and only if:
+    <div class="options"><div>A) −5 < x < −2 or 3 < x < 9</div><div>B) −2 < x < 3 or x > 9</div><div>C) x < −5 or 3 < x < 9</div><div>D) x < −2 or x > 9</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: A) −5 < x < −2 or 3 < x < 9</div>
+    f(x) = (x+5)(x−3) / (x+2)(x−9). Critical points: −5, −2, 3, 9.<br>
+    Wavy curve: negative in <strong>(−5,−2) and (3,9)</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">4. Functions (Composite, Piecewise)</span><span class="badge badge-hot">🔥 Rising Trend 2026</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">If f(x) = x² − 3x + 2, find the number of solutions of f(f(x)) = 0.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>f(x) = (x−1)(x−2). f(f(x)) = 0 means f(x) = 1 or f(x) = 2. f(x) = 1: x²−3x+1 = 0 → 2 solutions. f(x) = 2: x²−3x = 0 → x(x−3)=0 → 2 solutions. Total = <strong>4 solutions</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Function Symmetry — Sum of Roots</span><span><span class="year-badge">CAT 2020 Slot 1</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">If f(5+x) = f(5−x) for every real x and f(x) = 0 has four distinct real roots, then the sum of the roots is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 20</div>
+    f(5+x) = f(5−x) means f is symmetric about x = 5. If r is a root, so is 10−r.<br>
+    4 roots form 2 pairs: (r₁, 10−r₁) and (r₂, 10−r₂). Sum = 10+10 = <strong>20</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">5. Logarithms</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">If log₂(log₃(log₄(x))) = 0, find x.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>log₂(log₃(log₄(x))) = 0 → log₃(log₄(x)) = 2⁰ = 1 → log₄(x) = 3¹ = 3 → x = 4³ = <strong>64</strong>.</div></details>
-  </div>
-
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">6. Sequences & Series (AP, GP, Special)</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">The sum of an infinite GP is 12 and the sum of the squares of its terms is 48. Find the first term and common ratio.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>S = a/(1−r) = 12. Sum of squares: a²/(1−r²) = 48. Dividing: a(1+r)/a = 48/12 → a/(1−r) × (1−r)/(1+r) × a = ... Simpler: a²/(1−r²) = a²/((1−r)(1+r)) = 48. From first: a = 12(1−r). So 144(1−r)²/((1−r)(1+r)) = 48 → 144(1−r)/(1+r) = 48 → 3(1−r) = 1+r → 3−3r = 1+r → r = 1/2, a = <strong>6</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Simultaneous Logarithmic Equations</span><span><span class="year-badge">CAT 2019 Slot 1</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">Let x and y be positive real numbers such that log₅(x+y) + log₅(x−y) = 3, and log₂y − log₂x = 1 − log₂3. Find xy. <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 150</div>
+    Eq 2: log₂(y/x) = log₂(2/3) → y = 2x/3.<br>
+    Eq 1: log₅[(x+y)(x−y)] = 3 → x²−y² = 125.<br>
+    x² − 4x²/9 = 125 → 5x²/9 = 125 → x² = 225 → x = 15, y = 10.<br>
+    xy = <strong>150</strong>
+    </div></details>
   </div>
 </div>
 
-<!-- ============ GEOMETRY ============ -->
+<!-- ========== GEOMETRY ========== -->
 <div id="sec-geometry" class="section">
   <div class="topic-header">
     <div class="topic-icon" style="background:rgba(0,184,148,.15)">📏</div>
-    <div>
-      <div class="topic-name">Geometry & Mensuration</div>
-      <div class="topic-meta">Appears 84% of years • 2-3 questions • Difficulty: Hard • RISING TREND ↑</div>
-    </div>
+    <div><div class="topic-name">Geometry & Mensuration</div><div class="topic-meta">Appears 84% of years • 2-3 questions • RISING TREND</div></div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">1. Triangles — Similar Triangles / Area Ratios</span><span class="badge badge-hot">🔥 Very Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">In triangle ABC, D and E are points on AB and AC such that DE ∥ BC. If AD/DB = 2/3, find the ratio of areas of △ADE to △ABC.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>AD/AB = 2/5. For similar triangles, area ratio = (side ratio)². Area(ADE)/Area(ABC) = (2/5)² = <strong>4/25</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Equilateral Triangle — Viviani's Theorem</span><span><span class="year-badge">CAT 2020 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">From an interior point of an equilateral triangle, perpendiculars are drawn on all three sides. The sum of the lengths of the three perpendiculars is s. Then the area of the triangle is:
+    <div class="options"><div>A) s²/(2√3)</div><div>B) 2s²/√3</div><div>C) s²/√3</div><div>D) √3·s²/2</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: C) s²/√3</div>
+    Viviani's: p₁+p₂+p₃ = altitude = s. Altitude h = (√3/2)a = s → a = 2s/√3.<br>
+    Area = (√3/4)a² = (√3/4)(4s²/3) = <strong>s²/√3</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">2. Circles — Tangent, Secant, Common Tangents</span><span class="badge badge-hot">🔥 Very Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">Two circles of radii 5 cm and 3 cm have their centres 10 cm apart. What is the length of their direct common tangent?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>DCT = √(d² − (r₁−r₂)²) = √(100 − 4) = √96 = <strong>4√6 cm</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Centroid — Area of Remaining Portion</span><span><span class="year-badge">CAT 2017 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">From triangle ABC with sides 40 ft, 25 ft, 35 ft, a triangular portion GBC is cut off where G is the centroid. The area (in sq ft) of the remaining portion is:
+    <div class="options"><div>A) 225√3</div><div>B) 500/√3</div><div>C) 250/√3</div><div>D) 500√3</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: B) 500/√3</div>
+    s = 50. Heron's: Δ = √(50×10×25×15) = 250√3 sq ft.<br>
+    Centroid divides into 3 equal sub-triangles → GBC = Δ/3.<br>
+    Remaining = 2Δ/3 = 500√3/3 = <strong>500/√3</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">3. Mensuration — 3D Solids (Rising!)</span><span class="badge badge-hot">🔥 Rising Trend 2026</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">A cone of height 12 cm and base radius 9 cm is filled with water. A sphere of maximum possible radius is placed in it. What fraction of the cone's volume is occupied by the sphere?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Slant height = √(144+81) = √225 = 15. Inradius of cone (sphere that fits) = Volume/Lateral SA × 3... Using formula: r = 3V/(πRl + πR²) simplified. For inscribed sphere in cone: r = Rh/(l+R) = 9×12/(15+9) = 108/24 = 4.5 cm. V_sphere = (4/3)π(4.5)³ = 121.5π. V_cone = (1/3)π(81)(12) = 324π. Fraction = 121.5/324 = <strong>3/8 = 37.5%</strong>.</div></details>
-
-    <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>A problem involving a sphere inscribed in a cone/cylinder, or water displacement when a solid is submerged, is very likely. 3D mensuration has appeared in 4 of the last 5 CATs.</div>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Three Tangent Circles — Find Radius</span><span><span class="year-badge">CAT 2019 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">Two circles, each of radius 4 cm, touch externally. Each is touched externally by a third circle. If these three circles have a common tangent, the radius of the third circle (in cm) is:
+    <div class="options"><div>A) π/3</div><div>B) 1</div><div>C) 1/√2</div><div>D) √2</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: B) 1 cm</div>
+    Two R=4 circles on tangent line, centres at (−4,4) and (4,4). Third circle of radius r centred at (0,r).<br>
+    Distance from centre = R+r: 4² + (4−r)² = (4+r)²<br>
+    16 + 16−8r+r² = 16+8r+r² → 16 = 16r → <strong>r = 1</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">4. Coordinate Geometry</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">Find the area of the triangle formed by the lines y = 0, x + y = 6, and x = 0.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Vertices: (0,0), (6,0), (0,6). Area = ½ × base × height = ½ × 6 × 6 = <strong>18 sq units</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Chord & Central Angle</span><span><span class="year-badge">CAT 2018 Slot 2</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">A chord of length 5 cm subtends an angle of 60° at the centre. The length of a chord that subtends 120° at the centre of the same circle is:
+    <div class="options"><div>A) 5√3</div><div>B) 6√2</div><div>C) 8</div><div>D) 2π</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: A) 5√3</div>
+    60° chord = equilateral triangle with radii → r = 5.<br>
+    120° chord = 2r·sin(60°) = 2×5×√3/2 = <strong>5√3</strong>
+    </div></details>
+  </div>
+
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Frustum of Cone — 3D Mensuration</span><span><span class="year-badge">CAT 2018 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">A right circular cone, height 12 ft, base diameter 8 ft. The tip is cut off with a plane parallel to the base and 9 ft from the base. With π = 22/7, the volume (in cubic ft) of the remaining part is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 198</div>
+    R = 4, H = 12. Cut at h = 3 from top → r = 4×3/12 = 1.<br>
+    V = π/3[12×16 − 3×1] = (22/7)/3 × 189 = 22/7 × 63 = <strong>198 cu ft</strong>
+    </div></details>
   </div>
 </div>
 
-<!-- ============ MODERN MATH ============ -->
+<!-- ========== P&C / PROBABILITY ========== -->
 <div id="sec-modern" class="section">
   <div class="topic-header">
     <div class="topic-icon" style="background:rgba(253,121,168,.15)">🎲</div>
-    <div>
-      <div class="topic-name">P&C, Probability, Set Theory</div>
-      <div class="topic-meta">Appears 76% of years • 1-2 questions • Difficulty: Hard • High risk-reward</div>
-    </div>
+    <div><div class="topic-name">P&C, Probability, Set Theory</div><div class="topic-meta">Appears 76% of years • 1-2 questions • High risk-reward</div></div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">1. Arrangements with Constraints</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">In how many ways can 5 boys and 3 girls be seated in a row such that no two girls sit together?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Arrange 5 boys: 5! = 120. Gaps for girls: _B_B_B_B_B_ = 6 gaps. Choose 3 from 6 and arrange: P(6,3) = 120. Total = 120 × 120 = <strong>14,400</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Distribution — Even Partition</span><span><span class="year-badge">CAT 2022 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">The number of ways of distributing 20 identical balloons among 4 children such that each child gets some balloons but no child gets an odd number of balloons, is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 84</div>
+    Each gets 2a, 2b, 2c, 2d ≥ 2 → a+b+c+d = 10, each ≥ 1.<br>
+    Positive solutions = C(9,3) = <strong>84</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">2. Distribution / Identical & Distinct Objects</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">In how many ways can 10 identical chocolates be distributed among 3 children such that each child gets at least 2?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Give 2 to each child first. Remaining = 10 − 6 = 4. Distribute 4 among 3 (each ≥ 0) = C(4+3−1, 3−1) = C(6,2) = <strong>15</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Multi-commodity Distribution</span><span><span class="year-badge">CAT 2021 Slot 2</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">The number of ways of distributing 15 identical balloons, 6 identical pencils and 3 identical erasers among 3 children, such that each child gets at least four balloons and one pencil, is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 1000</div>
+    Balloons: give 4 each, distribute remaining 3 → C(5,2)=10.<br>
+    Pencils: give 1 each, distribute remaining 3 → C(5,2)=10.<br>
+    Erasers: distribute 3 freely → C(5,2)=10.<br>
+    Total = 10 × 10 × 10 = <strong>1000</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">3. Probability — Conditional & Bayes</span><span class="badge badge-possible">📌 Possible</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">A bag has 4 red and 6 blue balls. Two balls are drawn without replacement. What is the probability that both are red?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>P = (4/10) × (3/9) = 12/90 = <strong>2/15</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Tournament — Boy vs Girl Matches</span><span><span class="year-badge">CAT 2018 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">In a tournament, there are 43 junior and 51 senior participants. Each pair of juniors play one match, each pair of seniors play one match, no cross-level matches. Girl vs girl matches in juniors = 153, boy vs boy matches in seniors = 276. The number of boy vs girl matches is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 1098</div>
+    Junior girls: C(G,2) = 153 → G(G−1) = 306 = 18×17 → G = 18. Boys = 25. B×G = 450.<br>
+    Senior boys: C(B,2) = 276 → B(B−1) = 552 = 24×23 → B = 24. Girls = 27. B×G = 648.<br>
+    Total = 450 + 648 = <strong>1098</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">4. Set Theory — Venn Diagram Max/Min</span><span class="badge badge-hot">🔥 Very Likely 2026</span></div>
-    <div class="question-box"><div class="q-label">Practice — CAT Favourite</div><div class="q-text">In a class of 120 students: 80 like Cricket, 70 like Football, 60 like Hockey. 40 like both Cricket and Football, 30 like both Football and Hockey, 35 like both Cricket and Hockey, and 20 like all three. How many like none?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>|C∪F∪H| = 80+70+60−40−30−35+20 = 125. But total = 120. So at least 5 students were counted extra → <strong>0 like none is not possible</strong> with these numbers (inconsistent), OR the question should give total ≥ 125. If total = 150, then none = 150 − 125 = 25. Key insight: always check if n(A∪B∪C) ≤ Total.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Geometric Combinatorics — Circle Diameters</span><span><span class="year-badge">CAT 2017 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">Let AB, CD, EF, GH, and JK be five diameters of a circle with center O. In how many ways can three points be chosen out of A, B, C, D, E, F, G, H, J, K, and O to form a triangle? <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 160</div>
+    11 points total. C(11,3) = 165. Collinear sets: {A,O,B}, {C,O,D}, etc. = 5.<br>
+    Triangles = 165 − 5 = <strong>160</strong>
+    </div></details>
+  </div>
 
-    <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>"What is the maximum/minimum number of students who like exactly 2 of 3 subjects?" — This EXACT formulation is a CAT favourite. Practice max-min Venn problems extensively.</div>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Divisibility Constrained Permutations</span><span><span class="year-badge">CAT 2017 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">How many 4-digit numbers, divisible by 6, can be formed using digits 0, 2, 3, 4, 6, such that no digit is used more than once and 0 does not occur in the left-most position? <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 50</div>
+    Divisible by 6 = div by 2 (last digit even) AND div by 3 (digit sum div by 3).<br>
+    Total digit sum {0,2,3,4,6} = 15. Exclude 1 digit keeping sum div by 3: exclude 0 or 3.<br>
+    Case 1 (exclude 0, digits {2,3,4,6}): last digit even (3 choices) × 3! = 18.<br>
+    Case 2 (exclude 3, digits {0,2,4,6}): sub-cases for 0 at end vs not → 32 ways.<br>
+    Total = 18 + 32 = <strong>50</strong>
+    </div></details>
   </div>
 </div>
 
-<!-- ============ RATIO / PERCENTAGE / AVERAGES ============ -->
+<!-- ========== ARITHMETIC ========== -->
 <div id="sec-arithmetic" class="section">
   <div class="topic-header">
     <div class="topic-icon" style="background:rgba(253,203,110,.15)">📊</div>
-    <div>
-      <div class="topic-name">Ratios, Percentages, Averages, CI/SI, Mixtures</div>
-      <div class="topic-meta">Appears 96% of years • 3-5 questions combined • Difficulty: Easy to Moderate</div>
-    </div>
+    <div><div class="topic-name">Percentages, Ratios, Averages, Mixtures, CI/SI</div><div class="topic-meta">Appears 96% of years • 3-5 questions combined</div></div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">1. Successive Percentage Change</span><span class="badge badge-hot">🔥 Almost Certain</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">The price of a commodity increases by 20% and then decreases by 20%. What is the net percentage change?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Net effect = a + b + ab/100 = 20 + (−20) + (20)(−20)/100 = 0 − 4 = <strong>−4% (decrease)</strong>. Remember: successive same% increase then decrease always gives a loss of (x/10)²%.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">CI vs SI — Two Different Investments</span><span><span class="year-badge">CAT 2019 Slot 2</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">Amal invests Rs 12000 at 8% compounded annually, and Rs 10000 at 6% compounded semi-annually, both for one year. Bimal invests at 7.5% simple interest for one year. If both get same interest, the amount invested by Bimal (in Rs) is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 20,920</div>
+    Amal's interest: 12000×0.08 = 960. 10000[(1.03)²−1] = 609. Total = 1569.<br>
+    Bimal: P × 0.075 = 1569 → P = <strong>20,920</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">2. Mixtures & Alligation (Replacement)</span><span class="badge badge-hot">🔥 HIGH CHANCE 2026</span></div>
-    <div class="question-box"><div class="q-label">Practice — Replacement Type</div><div class="q-text">A vessel contains 60 litres of milk. 12 litres is taken out and replaced with water. This process is repeated 3 times. How much milk remains?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Milk remaining = 60 × (1 − 12/60)³ = 60 × (4/5)³ = 60 × 64/125 = <strong>30.72 litres</strong>.</div></details>
-
-    <div class="question-box"><div class="q-label">Practice — Alligation</div><div class="q-text">In what ratio must tea at ₹60/kg be mixed with tea at ₹90/kg to get a mixture worth ₹70/kg?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>By alligation: (90−70):(70−60) = 20:10 = <strong>2:1</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Mixtures — Alligation by Density</span><span><span class="year-badge">CAT 2019 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">A chemist mixes two liquids. One litre of liquid 1 weighs 1 kg and one litre of liquid 2 weighs 800 gm. If half litre of the mixture weighs 480 gm, then the percentage of liquid 1 in the mixture, by volume, is:
+    <div class="options"><div>A) 70</div><div>B) 85</div><div>C) 80</div><div>D) 75</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: C) 80%</div>
+    Density: L1 = 1000 g/L, L2 = 800 g/L, Mix = 960 g/L.<br>
+    Alligation: (960−800):(1000−960) = 160:40 = 4:1.<br>
+    Liquid 1 = 4/5 = <strong>80%</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">3. CI vs SI / Compound Interest</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">The difference between CI and SI on a sum for 2 years at 10% per annum is ₹50. Find the principal.</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Diff for 2 years = P × (r/100)² = P × (0.1)² = 0.01P = 50. P = <strong>₹5,000</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Averages — Max-Min Mean Difference</span><span><span class="year-badge">CAT 2020 Slot 2</span><span class="difficulty diff-hard">Hard</span></span></div>
+    <div class="q-text">In a group of 10 students, the mean of the lowest 9 scores is 42 while the mean of the highest 9 scores is 47. For the entire group, the maximum possible mean exceeds the minimum possible mean by:
+    <div class="options"><div>A) 5</div><div>B) 4</div><div>C) 3</div><div>D) 6</div></div></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: B) 4</div>
+    Sum of lowest 9 = 378. Sum of highest 9 = 423. x₁₀ − x₁ = 45.<br>
+    Max mean: x₁ = 42 → S = 465 → mean = 46.5.<br>
+    Min mean: x₁₀ = 47 → S = 425 → mean = 42.5.<br>
+    Diff = <strong>4</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">4. Weighted Average / Group Problems</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <div class="question-box"><div class="q-label">Practice</div><div class="q-text">Average of 30 students is 40. If the top 5 scorers are removed, the average drops to 35. What was the average of the top 5?</div></div>
-    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Solution</div>Total = 30 × 40 = 1200. Remaining 25 students total = 25 × 35 = 875. Top 5 total = 1200 − 875 = 325. Average = 325/5 = <strong>65</strong>.</div></details>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Ratios — Queue Position</span><span><span class="year-badge">CAT 2022 Slot 1</span><span class="difficulty diff-easy">Easy</span></span></div>
+    <div class="q-text">Pinky is in a queue. Ratio of persons ahead to behind her is 3:5. If total persons < 300, the maximum number ahead of her is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 111</div>
+    Ahead = 3k, Behind = 5k. Total = 8k+1 < 300 → k ≤ 37.<br>
+    Max ahead = 3×37 = <strong>111</strong>
+    </div></details>
+  </div>
+
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Percentage — Pass/Fail Demographics</span><span><span class="year-badge">CAT 2019 Slot 1</span><span class="difficulty diff-mod">Medium</span></span></div>
+    <div class="q-text">In a class, 60% are girls and the rest boys. There are 30 more girls than boys. If 68% of students, including 30 boys, pass an exam, the percentage of girls who do not pass is: <em>[TITA]</em></div>
+    <details><summary>Show Answer & Solution</summary><div class="answer-box"><div class="a-label">Answer: 20%</div>
+    20% of Total = 30 → Total = 150. Girls = 90, Boys = 60.<br>
+    Passed = 102. Passed boys = 30 → Passed girls = 72. Failed girls = 18.<br>
+    18/90 × 100 = <strong>20%</strong>
+    </div></details>
   </div>
 </div>
 
-<!-- ============ VARC ============ -->
+<!-- ========== VARC ========== -->
 <div id="sec-varc" class="section">
   <div class="topic-header">
     <div class="topic-icon" style="background:rgba(116,185,255,.15)">📖</div>
-    <div>
-      <div class="topic-name">VARC — Question Types & Patterns</div>
-      <div class="topic-meta">24 questions • 40 minutes • RC is 65-70% of this section</div>
-    </div>
+    <div><div class="topic-name">VARC — Actual PYQs</div><div class="topic-meta">24 questions • 40 minutes • RC is 65-70%</div></div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">1. RC — Inference Questions (THE most common type)</span><span class="badge badge-hot">🔥 100% Certain</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">"Which of the following can be inferred from the passage?" — Tests whether you can draw logical conclusions that aren't explicitly stated but are supported by the text.</p>
-    <div class="tip">💡 <strong>Aditi's Tip:</strong> The answer is NEVER directly stated in the passage. It must be a logical extension. Eliminate options that are too extreme, too broad, or make assumptions beyond the passage.</div>
-    <div class="predict-box"><div class="p-label">🔮 Expected in 2026</div>6-8 inference questions across 4-5 passages. Passages on AI ethics, climate economics, and social psychology are trending.</div>
+  <div class="sub-heading">Para Jumbles — Actual CAT Questions</div>
+
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Para Jumble — True Crime Appeal</span><span class="year-badge">CAT 2023 Slot 1</span></div>
+    <div class="q-text">Arrange into a coherent paragraph:<br>
+    <strong>1.</strong> What precisely are the "unusual elements" that make a particular case so attractive to a certain kind of audience?<br>
+    <strong>2.</strong> It might be a particularly savage or unfathomable level of depravity, very often it has something to do with the precise amount of mystery involved.<br>
+    <strong>3.</strong> Unsolved, and perhaps unsolvable cases offer something that "ordinary" murder doesn't.<br>
+    <strong>4.</strong> Why are some crimes destined for perpetual re-examination and others locked into permanent obscurity?</div>
+    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Answer: 4123</div>
+    <strong>4</strong> (broad question: why some crimes are revisited) → <strong>1</strong> (narrows to "unusual elements") → <strong>2</strong> (answers: depravity, mystery) → <strong>3</strong> (concludes: unsolved cases have special appeal)
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">2. RC — Main Idea / Primary Purpose</span><span class="badge badge-hot">🔥 Certain</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">"The primary purpose of the passage is to..." — Tests big-picture comprehension.</p>
-    <div class="tip">💡 <strong>Tip:</strong> Read the first and last paragraphs carefully. The main idea connects ALL paragraphs, not just one. Eliminate options that are too narrow (covers only one para) or too broad (goes beyond what's discussed).</div>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Para Jumble — Emergent Consciousness</span><span class="year-badge">CAT 2023 Slot 2</span></div>
+    <div class="q-text">Arrange into a coherent paragraph:<br>
+    <strong>1.</strong> Like the ants that make up a colony, no single neuron holds complex information like self-awareness, hope or pride.<br>
+    <strong>2.</strong> Although the human brain is not yet understood enough to identify the mechanism by which emergence functions, most neurobiologists agree that complex interconnections among the parts give rise to qualities that belong only to the whole.<br>
+    <strong>3.</strong> Nonetheless, the sum of all neurons in the nervous system generate complex human emotions like fear and joy, none of which can be attributed to a single neuron.<br>
+    <strong>4.</strong> Human consciousness is often called an emergent property of the human brain.</div>
+    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Answer: 4132</div>
+    <strong>4</strong> (introduces concept) → <strong>1</strong> (analogy: like ants, single neurons can't hold complex info) → <strong>3</strong> ("Nonetheless" — but collectively they produce emotions) → <strong>2</strong> (scientific consensus: interconnections create whole-system properties)
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">3. RC — Author's Tone / Attitude</span><span class="badge badge-hot">🔥 Very Likely</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">"The author's attitude towards X can best be described as..." — Look for adjective choices carefully.</p>
-    <div class="tip">💡 Common tones in CAT: <strong>Critical but balanced</strong>, <strong>Cautiously optimistic</strong>, <strong>Skeptical</strong>, <strong>Analytical</strong>. It's almost NEVER "indifferent" or "hostile" — CAT passages are from academic sources.</div>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Para Jumble — Fish Skin Collagen</span><span class="year-badge">CAT 2022 Slot 1</span></div>
+    <div class="q-text"><strong>1.</strong> Fish skin collagen has excellent thermo-stability and tensile strength making it ideal for bandages.<br>
+    <strong>2.</strong> Collagen, one of the main structural proteins in connective tissues, is well known for promoting skin regeneration.<br>
+    <strong>3.</strong> Fish skin swims in here as diseases and bacteria that affect fish are different from most human pathogens.<br>
+    <strong>4.</strong> The risk of introducing disease agents through pig and cow collagen has inhibited its broader medical applications.</div>
+    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Answer: 2431</div>
+    <strong>2</strong> (collagen intro) → <strong>4</strong> (problem: mammal collagen carries disease risk) → <strong>3</strong> (solution: fish pathogens differ from human) → <strong>1</strong> (fish collagen's mechanical advantages)
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">4. RC — Strengthen / Weaken the Argument</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">"Which of the following, if true, would most weaken the author's argument?"</p>
-    <div class="tip">💡 To weaken: Find the assumption behind the argument and attack it. To strengthen: Find evidence that supports the assumption.</div>
+  <div class="sub-heading">Odd Sentence Out — Actual CAT Questions</div>
+
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Odd One Out — Number Naming Irregularity</span><span class="year-badge">CAT 2023 Slot 1</span></div>
+    <div class="q-text">Which sentence does NOT belong?<br>
+    <strong>1.</strong> In English, there is no systematic rule for naming numbers; after ten, we have 'eleven' and 'twelve' and then the teens.<br>
+    <strong>2.</strong> Even more confusingly, some words invert the numbers they refer to: 'fourteen' puts the four first, even though it appears last.<br>
+    <strong>3.</strong> It can take children a while to learn all these words, and understand that 'fourteen' is different from 'forty'.<br>
+    <strong>4.</strong> For multiples of 10, English speakers switch to a different pattern: 'twenty', 'thirty', 'forty'.<br>
+    <strong>5.</strong> If you didn't know the word for 'eleven', you would be unable to guess it – you might come up with something like 'one-teen'.</div>
+    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Answer: Sentence 3</div>
+    Sentences 1, 5, 2, 4 discuss the <strong>structural irregularities</strong> of English number naming. Sentence 3 shifts to <strong>children's learning difficulty</strong> — a different topic entirely.
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">5. Para Jumbles (TITA — No negative marking!)</span><span class="badge badge-hot">🔥 Certain — 2-3 questions</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">Rearrange 4-5 sentences into a coherent paragraph. Usually TITA format.</p>
-    <div class="tip">💡 <strong>Strategy:</strong> (1) Find the OPENING sentence — introduces a topic, no pronoun references. (2) Find MANDATORY PAIRS — sentences that must be adjacent due to pronoun reference or cause-effect. (3) Find the CLOSING sentence — conclusion or summary. (4) Build the sequence from these anchors.</div>
-    <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>Expect 2-3 Para Jumbles, all TITA. At least one will have 5 sentences (harder). Look for transition words: "However", "Moreover", "Consequently".</div>
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Odd One Out — Orthosomnia & Sleep Apps</span><span class="year-badge">CAT 2018 Slot 2</span></div>
+    <div class="q-text"><strong>1.</strong> Our smartphones can now track our diets, biological cycles, even digestive systems and sleep-patterns.<br>
+    <strong>2.</strong> Researchers have coined "orthosomnia" to describe insomnia brought on by paying too much attention to sleep-tracking apps.<br>
+    <strong>3.</strong> Sleep, nature's soft nurse, is a blissful, untroubled state all too easily disturbed by earthly worries.<br>
+    <strong>4.</strong> The existence of a market for such apps is unsurprising: shift work, long-hours culture and blue light have conspired to rob many of us of rest.<br>
+    <strong>5.</strong> A new threat to a good night's rest has emerged – smart-phones with sleep-tracking apps.</div>
+    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Answer: Sentence 3</div>
+    1, 5, 4, 2 form a coherent paragraph on <strong>technology's impact on sleep</strong>. Sentence 3 is a <strong>generic poetic musing</strong> about sleep with no connection to technology.
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">6. Para Summary</span><span class="badge badge-hot">🔥 Certain — 2-3 questions</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">Pick the best summary of a given paragraph from 4 options.</p>
-    <div class="tip">💡 <strong>Eliminate:</strong> Options that add info NOT in the passage, miss the MAIN point, are too specific, or distort the tone. The best summary covers the KEY argument without extra details.</div>
+  <div class="sub-heading">Para Summary — Actual CAT Questions</div>
+
+  <div class="pyq">
+    <div class="pyq-head"><span class="pyq-topic">Para Summary — Democratic Petitioning</span><span class="year-badge">CAT 2022 Slot 1</span></div>
+    <div class="q-text"><em>Passage:</em> "Petitioning is an expeditious democratic tradition by which citizens can bring issues directly to governments. As expressions of collective voice, they support procedural democracy by shaping agendas. They can also recruit citizens to causes, give voice to the voteless, and clarify points of view. By contrast, elections are limited: they involve only a few candidates, voters' choices aren't specific to policies, and elections are episodic, whereas the voice of the people needs constant integration into government."
+    <div class="options" style="font-size:12.5px">
+    <div>A) Petitioning is a better form of democracy than elections because it gives citizens greater control.</div>
+    <div>B) By allowing citizens to bring issues directly to governments, petitioning makes procedural democracy more representative.</div>
+    <div>C) Elections should be replaced by petitioning to ensure representative democracy.</div>
+    <div>D) Petitioning has been important to democratic functioning, as it supplements the electoral process by enabling ongoing engagement.</div></div></div>
+    <details><summary>Show Answer</summary><div class="answer-box"><div class="a-label">Answer: D</div>
+    A: Too extreme ("better"). B: Too narrow. C: "Should be replaced" — never stated. <strong>D correctly captures that petitioning supplements elections through continuous engagement.</strong>
+    </div></details>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">7. Odd Sentence Out (TITA)</span><span class="badge badge-hot">🔥 Certain — 2-3 questions</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">5 sentences given, 4 form a coherent paragraph. Find the odd one out.</p>
-    <div class="tip">💡 <strong>Strategy:</strong> (1) Identify the THEME — what are 4 sentences about? (2) The odd one might be related but talks about a different ASPECT. (3) Often the odd sentence introduces a new entity or contradicts the flow. (4) Try forming the paragraph with each sentence removed — which removal makes the best paragraph?</div>
-  </div>
+  <div class="sub-heading">RC Passage Themes — What to Expect in 2026</div>
+  <div class="tip">💡 <strong>Aditi, focus your RC practice on these genres</strong> — they repeat year after year:
+  <br>• <strong>Philosophy & Cognitive Science</strong> (CAT 2023: counterfactual thinking; 2022: social brain hypothesis)
+  <br>• <strong>AI Ethics & Technology</strong> (CAT 2024: AI regulation; 2023: misinformation & algorithms)
+  <br>• <strong>Environment & Ecology</strong> (CAT 2024: carnivore-human conflict; 2023: sub-Antarctic ecology)
+  <br>• <strong>Economics & Sociology</strong> (CAT 2024: human capital theory; 2024: Spice Trade economics)
+  <br><br>Read: <strong>Aeon, The Guardian Long Reads, MIT Technology Review, The Atlantic</strong> — CAT passages are sourced from these.</div>
 </div>
 
-<!-- ============ DILR ============ -->
+<!-- ========== DILR ========== -->
 <div id="sec-dilr" class="section">
   <div class="topic-header">
     <div class="topic-icon" style="background:rgba(162,155,254,.15)">🧩</div>
-    <div>
-      <div class="topic-name">DILR — Set Types & Predicted Patterns</div>
-      <div class="topic-meta">20 questions in 4-5 sets • 40 minutes • Most unpredictable section</div>
+    <div><div class="topic-name">DILR — Actual CAT Set Descriptions</div><div class="topic-meta">20 questions in 4-5 sets • Most unpredictable section</div></div>
+  </div>
+
+  <div class="tip" style="margin-bottom:16px">⚠️ <strong>Aditi's DILR Golden Rule:</strong> Spend first 5 minutes scanning ALL sets. Pick 3 easy/medium ones. Skip the hardest. Set SELECTION wins DILR, not speed.</div>
+
+  <div class="dilr-set">
+    <h4>Set 1: Prime Token Funding 🔢</h4>
+    <div class="set-meta"><span class="year-badge">CAT 2022 Slot 1</span> • Type: Number Theory + Matrix • Difficulty: Hard</div>
+    <div class="scenario">
+    <strong>Setup:</strong> Six interviewers (Adhara, Bithi, Chhaya, Dhanavi, Esther, Fathima) each award tokens of one distinct prime value from {2, 3, 5, 7, 11, 13}. Five candidates receive funding = 1000 × (product of token values received).<br><br>
+    Pragnyaa: ₹390,000 (390=2×3×5×13) | Qahira: ₹210,000 (210=2×3×5×7) | Rasheeda: ₹165,000 (165=3×5×11) | Smera: ₹77,000 (77=7×11) | Tantra: ₹66,000 (66=2×3×11)<br><br>
+    <strong>Key Constraints:</strong> Fathima awarded to everyone except Qahira. Adhara awarded only to Pragnyaa. Bithi awarded to Smera but not Qahira. You deduce which interviewer has which prime.
     </div>
   </div>
 
-  <div class="tip" style="margin-bottom:16px">⚠️ <strong>Golden Rule for DILR, Aditi:</strong> Spend first 5 minutes SCANNING all sets. Pick 3-4 easy ones. Skip the hardest set entirely. Set SELECTION is more important than solving speed here.</div>
-
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">1. Tables — Data Analysis</span><span class="badge badge-hot">🔥 Almost Certain</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">Partially filled table, derive missing values using given conditions. Often involves percentages, ratios, or growth rates.</p>
-    <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>A table with 5-6 rows and 4-5 columns with some cells blank. You'll need to figure out values from row/column totals and constraints. Expect 4 questions per set.</div>
+  <div class="dilr-set">
+    <h4>Set 2: Archery Tournament 🏹</h4>
+    <div class="set-meta"><span class="year-badge">CAT 2019 Slot 1</span> • Type: Tournament + Scoring • Difficulty: Hard</div>
+    <div class="scenario">
+    <strong>Setup:</strong> Six archers (Tanzi, Umeza, Wangdu, Xyla, Yonita, Zeneca) compete across Rounds 1-3 (mandatory) with scores 1-5. Each Bull's Eye (5) earns a bonus round (Rounds 4-6).<br><br>
+    <strong>Constraints:</strong> Tanzi, Umeza, Yonita had identical final scores. All scores except one were multiples of 3. Highest total = 2×(lowest) + 1. Bull's eyes in Round 2 = 2× those in Round 3. Tanzi and Zeneca had same Round 1 scores but different Round 3 scores.
+    </div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">2. Arrangements (Linear & Circular)</span><span class="badge badge-hot">🔥 Very Likely</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">8-10 people seated in a row or around a table with multiple constraints (A sits 3rd from left, B not adjacent to C, etc.)</p>
-    <div class="tip">💡 <strong>Approach:</strong> Start with the MOST constrained person. Fill in definite positions first. Use elimination. Draw it out on paper!</div>
-    <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>A double-row arrangement (people sitting across a table facing each other) with 3-4 attributes per person is very likely. This type appeared in CAT 2022 and 2024.</div>
+  <div class="dilr-set">
+    <h4>Set 3: Three Doctors Clinic Queue 🏥</h4>
+    <div class="set-meta"><span class="year-badge">CAT 2019 Slot 2</span> • Type: Scheduling / Queuing • Difficulty: Very Hard</div>
+    <div class="scenario">
+    <strong>Setup:</strong> Three doctors (Ben: 10min/₹100, Kane: 15min/₹200, Wayne: 25min/₹300) in 3 rooms, 9:00-11:30 AM. Patients get sequential tokens. When a room is free, next token enters immediately. If multiple rooms free simultaneously, lower-numbered room gets priority.<br><br>
+    <strong>Questions asked:</strong> Which doctor did token #15 see? Total revenue by each doctor? Wait time for specific tokens?
+    </div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">3. Games & Tournaments</span><span class="badge badge-hot">🔥 CAT FAVOURITE — Very Likely</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">Round-robin or knockout tournaments. You'll need to figure out wins, losses, draws, points from partial information.</p>
-    <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>A tournament with 6-8 teams, league format (every team plays every other). Given: total points, some match results, constraints like "Team A scored more than Team B". You figure out the full results table. This appeared in CAT 2018, 2020, 2022, 2024 — almost guaranteed.</div>
+  <div class="dilr-set">
+    <h4>Set 4: Police Station Patrolling Routes 🚔</h4>
+    <div class="set-meta"><span class="year-badge">CAT 2023 Slot 3</span> • Type: Routes & Networks • Difficulty: Hard</div>
+    <div class="scenario">
+    <strong>Setup:</strong> Six stations (A-F) connected by streets. Four teams patrol 09:00–12:00 hrs. Each street segment takes 30 min. All teams start and end at Station A (6 segments each). No two teams can be on the same segment simultaneously.<br><br>
+    <strong>Constraints:</strong> Team locations given at key intervals. A-E segment used only by Teams 1 and 4. Team 4 never visited B, D, or F. Plot conflict-free routes for all four teams.
+    </div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">4. Scheduling / Sequencing</span><span class="badge badge-hot">🔥 Rising — Very Likely</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">Tasks/events scheduled across time slots with constraints on ordering, duration, prerequisites.</p>
-    <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>"5 courses across 6 time slots, each student takes 3, constraints on which can't overlap" — this scheduling type is trending heavily.</div>
+  <div class="dilr-set">
+    <h4>Set 5: ATM Cash Dispensation 💵</h4>
+    <div class="set-meta"><span class="year-badge">CAT 2018 Slot 1</span> • Type: System Combinatorics • Difficulty: Medium</div>
+    <div class="scenario">
+    <strong>Setup:</strong> ATM dispenses exactly ₹5,000 using only ₹100, ₹200, and ₹500 notes. Customer selects preferred denomination. Machine must give more notes of the preferred denomination than the other two combined.<br><br>
+    <strong>Questions:</strong> How many valid combinations for ₹500 preference? Max customers with 50 ₹500 notes? Minimum total notes for ₹100 preference?
+    </div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">5. Routes & Networks</span><span class="badge badge-new">🆕 New Trend</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">Find shortest path, minimum cost route, or optimal delivery schedule on a network/map.</p>
-    <div class="predict-box"><div class="p-label">🔮 2026 Prediction</div>A delivery/logistics optimization set with 5-6 cities and routes between them. This is a newer CAT favourite aligned with real-world MBA problems.</div>
+  <div class="dilr-set">
+    <h4>Set 6: Walkways & Lakes Community 🏘️</h4>
+    <div class="set-meta"><span class="year-badge">CAT 2024 Slot 2</span> • Type: Distance Optimization • Difficulty: Medium</div>
+    <div class="scenario">
+    <strong>Setup:</strong> Gated township with walkways and 3 rectangular lakes. Junctions A-P with given distances (OP=150m, ON=MN=300m, ML=400m, etc.). Gate at C, houses at A/H/M/L, Bank at B, Post Office at P.<br><br>
+    <strong>Questions:</strong> Shortest round-trip from L visiting both P and B. Maximum non-repeating path along lake perimeters.
+    </div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">6. Binary Logic / True-False</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">Given statements from 4-5 people where each makes claims. Some always tell truth, some always lie. Determine who's truthful.</p>
-    <div class="tip">💡 <strong>Approach:</strong> Assume person A tells truth → check for consistency. If contradiction → A lies. Systematically test each assumption.</div>
+  <div class="dilr-set">
+    <h4>Set 7: Coloured Beads 5×5 Grid 🔴🔵🟢</h4>
+    <div class="set-meta"><span class="year-badge">CAT 2020 Slot 2</span> • Type: Constraint Satisfaction • Difficulty: Very Hard</div>
+    <div class="scenario">
+    <strong>Setup:</strong> 25 beads (Red, Blue, Green) in a 5×5 grid. <strong>Rules:</strong> (1) Adjacent cells can't have same colour. (2) Between any two Blues in a row/column, there must be at least one Green. (3) Between any two Reds, there must be at least one Blue AND one Green.<br><br>
+    <strong>Questions:</strong> Max Red beads in entire grid? Min Blue beads required? How many valid 2-colour configurations?
+    </div>
   </div>
 
-  <div class="subtype">
-    <div class="subtype-header"><span class="subtype-name">7. Multi-variable Puzzles (Grids)</span><span class="badge badge-likely">⚡ Likely</span></div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:10px">5 people, each with 3-4 attributes (city, profession, car colour, etc.). Determine the complete assignment using clues.</p>
-    <div class="tip">💡 Use a matrix/grid to mark possibilities. Start with clues that give definite information. Cross-reference to eliminate.</div>
+  <div class="predict-box"><div class="p-label">🔮 DILR 2026 Predictions</div>
+  <strong>Almost Certain:</strong> Tournament fixtures (round-robin or knockout) + Table with missing data.<br>
+  <strong>Very Likely:</strong> Scheduling/queuing set (like Doctors Clinic) + Route optimization/network set.<br>
+  <strong>Rising:</strong> Number-theory-based puzzles (like Prime Token Funding) — appeared in 2022 and was loved by IIMs.<br>
+  <strong>Tip:</strong> Practice the constraint satisfaction approach — most DILR sets are about eliminating possibilities, not calculating.
   </div>
 </div>
 
@@ -806,7 +831,7 @@
 
 <footer class="footer">
   <p>Made with ❤️ for <strong>Aditi</strong>'s CAT 2026 journey | <a href="index.html">← Back to Main Dashboard</a></p>
-  <p style="margin-top:6px">Questions based on 25 years of CAT pattern analysis (2000–2024)</p>
+  <p style="margin-top:6px">All PYQs sourced from official CAT papers (2017–2024) via 2IIM, Cracku, Bodhee Prep</p>
 </footer>
 
 <script>
